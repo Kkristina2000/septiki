@@ -1,0 +1,11 @@
+-var partners = [{logo: "src/images/logos/partners/kann.svg", name: "Белорусский производитель очистных сооружений, трубной продукции и ёмкостного оборудования."},{logo: "src/images/logos/partners/unidelta.svg", name: "Итальянский производитель труб и фитингов для систем холодного водо-, газоснабжения, геотермальных систем."},{logo: "src/images/logos/partners/traidenis.svg", name: "Литовский производитель очистных сооружений, ёмкостей из стеклопластика и оборудования для разведения рыб."},{logo: "src/images/logos/partners/ibo.svg", name: "Производитель погружных насосов и других устройств в области насосных технологий."},{logo: "src/images/logos/partners/ostendorf.svg", name: "Ведущий производитель полимерных труб и фитингов из полипропилена."}]
+
+section.partners-section
+    div.partners-section__container._container
+        h2.partners-section__title.title Наши партнеры
+        div.partners-section__partners
+            for i in partners 
+                div.partners__item.partner
+                    div.partner__logo
+                        img(src=i.logo alt="Логотип")
+                    div.partner__name=i.name

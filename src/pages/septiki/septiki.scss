@@ -1,0 +1,45 @@
+.main{
+    @media(max-width: $tablet){
+        margin-top: 50px;
+    }
+}
+.advantages{
+    display: flex;
+}
+.installation-block{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 60px;
+    flex-wrap: wrap;
+    >img{
+        width: 240px;
+    }
+    @media(max-width: $tablet){
+        justify-content: space-around;
+        row-gap: 30px;
+        >img{
+            width: 270px;
+        }
+    }
+    @media(max-width: $mobile){
+        row-gap: 30px;
+        >img{
+            width: 130px;
+        }
+    }
+}
+.stations-section{
+    padding-top: 140px;
+
+    &__title{
+        text-align: center;
+    }
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media(max-width: $tablet){
+        row-gap: 90px;
+    }
+}

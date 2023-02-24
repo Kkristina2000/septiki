@@ -1,0 +1,12 @@
+.certificate-section__container {
+  display: flex;
+  gap: 175px;
+}
+.certificate-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.certificate-section__text {
+  width: 480px;
+}/*# sourceMappingURL=certificate.css.map */

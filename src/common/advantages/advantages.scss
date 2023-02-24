@@ -1,0 +1,29 @@
+.advantages{
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        width: 20%;
+
+        @media(max-width: $tablet){
+            width: 40%;
+        }
+        @media(max-width: $mobile){
+            width: 50%;
+        }
+    }
+    &__text{
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+    
+        @media(max-width: $mobile){
+            font-size: 12px;
+        }
+    }
+
+}

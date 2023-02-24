@@ -1,0 +1,45 @@
+.partners-section{
+    padding: 100px 0px;
+    &__title{
+        margin-bottom: 100px;
+        @media(max-width: $tablet){
+            margin-bottom: 60px;
+        }
+    }
+    &__partners{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 60px;
+        justify-content: center;
+    }
+}
+.partners{
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap:15px;
+        width: 33.33%;
+        @media(max-width: $tablet){
+            width: 50%;
+        }
+        @media(max-width: $mobile){
+            width: 100%;
+        }
+    }
+}
+.partner{
+    &__logo{
+        display: flex;
+        height: 100%;
+        img{
+            align-items: end;
+        }
+    }
+    &__name{
+        text-align: center;
+        width: 240px;
+        min-height: 64px;
+    }
+}

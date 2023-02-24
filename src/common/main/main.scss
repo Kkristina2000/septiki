@@ -1,0 +1,141 @@
+.main-section{
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top{
+        display: flex;
+        gap: 120px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    &__advantages{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 50px;
+        
+        @media(max-width: $tablet){
+            justify-content: space-around;
+        }
+    
+    }
+}
+.main-block{
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+        width: 420px;
+        @media(max-width: $tablet){
+            width: 280px;
+            gap: 23px;
+        }
+    
+        @media(max-width: $mobile){
+            width: 146px;
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+
+        @media(max-width: $tablet){
+            font-size: 25px;
+            line-height: 30px;
+        }
+    
+        @media(max-width: $mobile){
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+
+        @media(max-width: $tablet){
+            font-size: 15px;
+        }
+        
+        @media(max-width: $mobile){
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+    &__buttons{
+        margin-top: 89px;
+        @media(max-width: $tablet){
+            margin-top: 20px;
+        }
+        @media(max-width: $mobile){
+            margin-top: 40px;
+        }
+    }
+    &__media{
+
+    }
+}
+
+.media{
+    position: relative;
+    &__triangle{
+        position: absolute;
+        top: 110px;
+        
+        @media(max-width: $tablet){
+            max-width: 300px;
+            left:-110px;
+            top: 13px;
+        }
+
+        @media(max-width: $mobile){
+            max-width: 230px;
+        }
+    }
+
+    &__rectangle{
+        position: relative;
+        top: 257px;
+        left: 150px;
+        background-color: $grey-dark;
+        width: 540px;
+        height: 360px;
+        @media(max-width: $tablet){
+            width: 270px;
+            height: 180px;
+            left: -26px;
+            top: 145px;
+        }
+        @media(max-width: $tablet){
+            width: 180px;
+            height: 120px;
+
+        }
+    }
+    &__photo{
+        position: relative;
+        top: -230px;
+        left: 66px;
+        width: 600px;
+        height: 465px;
+        @media(max-width: $tablet){
+            top: -92px;
+            width: 300px;
+            height: 230px;
+            left: -66px;
+        }
+        @media(max-width: $mobile){
+            width: 180px;
+            height: 125px;
+            line-height: 20px;
+        }
+    }
+}

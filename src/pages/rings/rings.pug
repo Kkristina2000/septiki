@@ -1,0 +1,39 @@
+-var photoRings = 'src/images/rings/rings.jpg';
+-var questions = [{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'}]
+
+include ../../common/main/main.pug
+ include ../../common/questions/questions.pug
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кольца</title>
+    link(rel="stylesheet" href="src/scss/styles.css")
+</head>
+<body>
+    div.wrapper
+        include ../../common/header/header.pug
+        main.main
+            +main('Мини-экскаватор в аренду', 'Наличный и безналичный расчёт.', photoRings, 'оплата по факту выполненных работ', 'гарантия на монтаж 3 года', 'монтажники с опытом работы 5+ лет','Бесплатный выезд на замер')
+            section.rings-section._container
+                h1.stations-section__title.title Варианты септиков из колец
+                div.main-block__buttons.buttons
+                    a(href='#' class='button').buttons__telegram.button Спросить в Telegram
+                    a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
+                
+            include ../../common/order/order.pug
+            div.photos._container.photos-rings
+                div.rings-block
+                    img(src='src/images/rings/rings1.jpg')
+                    img(src='src/images/rings/rings2.jpg')
+                    img(src='src/images/rings/rings3.jpg')
+                    img(src='src/images/rings/rings4.jpg')
+                div.main-block__buttons.buttons
+                    a(href='#' class='button').buttons__telegram.button Спросить в Telegram
+                    a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
+            //- include ../../common/comment/comment.pug
+            +questions(questions)
+            include ../../common/partners/partners.pug
+            include ../../common/footer/footer.pug

@@ -1,0 +1,25 @@
+- var header1 = {model: 'Модель', liters: 'Л/сутки', residents: 'Число жителей', reset: 'Залповый сброс, л', coast: 'BYN'};
+- var header2 = {model: 'Модель', liters: 'Л/сутки', residents: 'Число жителей', coast: 'BYN'};
+
+mixin table(characteristics)
+    table.table
+        thead
+            tr
+                if (header1.length==characteristics[0].length)
+                    each item in header1
+                        th=item
+
+                else if (header2.length==characteristics[0].length)
+                    each item in header2
+                        th=item
+        tbody
+            each i in characteristics
+                tr 
+                    td.model=i.model 
+                    td=i.liters
+                    td=i.residents
+                    if (i.reset)
+                        td=i.reset 
+                    td.coast=i.coast
+
+

@@ -1,0 +1,95 @@
+.station-section{    
+    padding: 80px 0px;
+
+    &__container{
+        display: flex;
+        gap: 60px;
+    }
+    
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        gap: 30px;
+        width: 50%;
+    }
+    &__title{
+        text-align: right;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+    &__description{
+        display: flex;
+        justify-content: end;
+        background-color: $grey;
+        padding: 14px 28px 9px 89px;
+        width: 100%;
+    }
+    &__table{
+        width: 560px;
+        display: flex;
+        justify-content: center;
+    }
+    &__buttons{
+        width: 560px;
+        display: flex;
+        justify-content: center;
+    }
+    &__photos{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 540px;
+        >img{
+            width: 100%;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 20px;
+        }
+
+        @media(max-width: $tablet){
+             max-width: 240px;
+             margin-top: 80px;
+             row-gap: 30px;
+             div{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                row-gap: 10px;
+                >img{
+                    width: 75px;
+                }
+            }
+        }
+        @media(max-width: $mobile){
+           
+        }
+    }
+}
+.photo{
+    border: 1px solid $turquoise-light;
+}
+
+.text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    max-width: 540px;
+    text-align: left;
+}
+.station-section:nth-child(odd) .station-section__container{
+    flex-direction: row-reverse;
+}
+.station-section:nth-child(odd) .station-section__content{
+    align-items: start;
+}
+.station-section:nth-child(odd) .station-section__description{
+    justify-content: start;
+}
