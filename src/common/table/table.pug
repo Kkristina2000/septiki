@@ -22,4 +22,20 @@ mixin table(characteristics)
                         td=i.reset 
                     td.coast=i.coast
 
+mixin table-caisson(caissons)
+    table.table-caisson
+        thead
+            tr
+                th Модель кессона
+                th Размеры, мм
+                th Высотка корпуса, мм
+                th BYN
+        tbody
+            each caisson in caissons
+                tr 
+                    td.model=caisson.model
+                    td.size=caisson.size
+                    td=caisson.height
+                    td.coast=caisson.cost
+
 

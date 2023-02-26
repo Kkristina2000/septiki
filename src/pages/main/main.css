@@ -1,0 +1,28 @@
+.services-section {
+  padding: 150px 0px;
+}
+.services-section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+.services-section .services {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.company-section {
+  padding: 190px 0px;
+}
+.company-section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.advantage-company-block__container {
+  display: flex;
+  justify-content: space-around;
+  gap: 140px;
+}/*# sourceMappingURL=main.css.map */

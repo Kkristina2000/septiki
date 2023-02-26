@@ -1,8 +1,11 @@
 -var photoRings = 'src/images/rings/rings.jpg';
--var questions = [{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'}]
+-var questions = [{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'}];
+
+//- -var septiki = [{title: '2+2 (две шахты)', image: '', characteristics: [set: '6 колец+ 2 люка', volume: '7 м3', account: '3-4 человека', price: '2 300 BYN']},{title: '2+3 (две шахты)', image: '', characteristics: [set: '5 колец+ 2 люка', volume: '8,5 м3', account: '4-5 человек', price: '2 300 BYN']},{title: '3+3 (две шахты)', image: '', characteristics: [set: '6 колец+ 2 люка', volume: '10 м3', account: '5-6 человек', price: '2 300 BYN']},{title: '2+2+2 (три шахты)', image: '', characteristics: [set: '6 колец+ 2 люка', volume: '12,5 м3', account: '6-7 человек', price: '2 300 BYN']},{title: '2+3+3 (три шахты)', image: '', characteristics: [set: '8 колец+ 3 люка', volume: '16 м3', account: '12 человек', price: '2 300 BYN']},{title: '3+3+3 (три шахты)', image: '', characteristics: [set: '9 колец+ 3 люка', volume: '15 м3', account: '11-12 человек', price: '2 300 BYN']},{title: '4+5 (две шахты)', image: '', characteristics: [set: '7 колец+ 2 люка', volume: '13,3 м3', account: '6-8 человек', price: '2 300 BYN']},{title: '3+3+4 (три шахты)', image: '', characteristics: [set: '10 колец+ 3 люка', volume: '16 м3', account: '11-12 человек', price: '2 300 BYN']},{title: '3+2+2 (три шахты)', image: '', characteristics: [set: '7 колец+ 3 люка', volume: '14 м3', account: '6-8 человек', price: '2 300 BYN']}];
 
 include ../../common/main/main.pug
- include ../../common/questions/questions.pug
+include ../../common/questions/questions.pug
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,13 +19,13 @@ include ../../common/main/main.pug
     div.wrapper
         include ../../common/header/header.pug
         main.main
-            +main('Мини-экскаватор в аренду', 'Наличный и безналичный расчёт.', photoRings, 'оплата по факту выполненных работ', 'гарантия на монтаж 3 года', 'монтажники с опытом работы 5+ лет','Бесплатный выезд на замер')
+            +main('Септики из бетонных колец', 'Наличный и безналичный расчёт.', photoRings, 'оплата по факту выполненных работ', 'гарантия на монтаж 3 года', 'монтажники с опытом работы 5+ лет','Бесплатный выезд на замер')
             section.rings-section._container
-                h1.stations-section__title.title Варианты септиков из колец
+                h1.rings-section__title.title Варианты септиков из колец
+                div.rings-section__septiki
                 div.main-block__buttons.buttons
                     a(href='#' class='button').buttons__telegram.button Спросить в Telegram
                     a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
-                
             include ../../common/order/order.pug
             div.photos._container.photos-rings
                 div.rings-block

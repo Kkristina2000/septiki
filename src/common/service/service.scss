@@ -1,0 +1,32 @@
+.service-block{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 90px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+    }
+    &__title{
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &__subtitle{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+    }
+    &__image{
+        width: 100%;
+        height: 100%;
+    }
+}
+.service-block:nth-child(even) .service-block__container{
+    flex-direction: row-reverse;
+}

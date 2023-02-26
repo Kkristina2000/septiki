@@ -1,0 +1,23 @@
+.advantagy-company-block{
+    padding: 10px;
+    margin-top: 200px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    &__amount{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: $turquoise-light;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: lowercase;
+    }
+}

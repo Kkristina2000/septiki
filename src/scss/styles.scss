@@ -9,7 +9,10 @@
 @import '../pages/contacts/contacts.scss';
 @import '../common/header/header.scss';
 @import '../common/main/main.scss';
+@import '../common/advantage-company/advantage-company.scss';
 @import '../common/advantages/advantages.scss';
+@import '../common/service/service.scss';
+@import '../common/septik-card/septik-card.scss';
 @import '../common/station/station.scss';
 @import '../common/table/table.scss';
 @import '../common/order/order.scss';
@@ -64,6 +67,7 @@ body{
     display: flex;
     gap: 45px;
     height: 40px;
+    justify-content: center;
 
     @media(max-width: $tablet){
         gap: 25px;
@@ -109,4 +113,11 @@ body{
 
     @media(max-width: $mobile){
     }
+}
+.link{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: underline;
+    color: $turquoise-dark;
 }

@@ -3,11 +3,57 @@
     flex-direction: column;
     align-items: center;
 }
-.caissons-photos {
+.caissons-photos{
     display: flex;
     justify-content: space-between;
     column-gap: 90px;
     >img{
         width: 330px;
+    }
+}
+.caissons-section{
+    background-color: $grey;
+    padding: 55px 0px;
+    margin-top: 80px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+    &__caisson-block{
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+    }
+    &__title{
+
+    }
+}
+.caisson-block{
+    &__name{
+        color: #A9AAA9;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+    &__text{
+        background-color: $grey-dark;
+        padding: 45px 100px 45px 0px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: $white;
+    }
+}
+.row-section{
+    margin: 120px 0px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
     }
 }
