@@ -1,5 +1,19 @@
+.advantage-company-block{
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        gap: 140px;
+        @media(max-width: $tablet){
+            justify-content: space-between;
+            gap: 40px;
+        }
+    }
+}
 .services-section{
-    padding: 150px 0px;
+    padding: 150px 0px 0px;
+    @media(max-width: $tablet){
+        padding: 100px 0px 0px;
+    }
     &__container{
         display: flex;
         flex-direction: column;
@@ -12,17 +26,46 @@
     }
 }
 .company-section{
-    padding: 190px 0px;
+    padding: 150px 0px 0px;
+        @media(max-width: $tablet){
+        padding: 100px 0px 0px;
+    }
     &__container{
         display: flex;
         flex-direction: column;
         gap: 80px;
+        text-align: right;
     }
-}
-.advantage-company-block{
-    &__container{
+    &__body{
         display: flex;
-        justify-content: space-around;
-        gap: 140px;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 30px;
     }
+    &__description{
+        display: flex;
+        background-color: $grey;
+        padding: 14px 28px 9px 89px;
+        position: relative;
+        left: 0px;
+        width: 49%;
+        p{
+            width: 530px;
+            text-align: start;
+        }
+        @media(max-width: $tablet){
+            width: 100%;
+        }
+    }
+    &__link{
+        @media(max-width: $tablet){
+            display: none;
+        }
+    }
+    &__images{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+    } 
 }

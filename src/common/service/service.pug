@@ -3,8 +3,9 @@ mixin service(service)
         .service-block__container._container 
             div.service-block__content
                 h2.service-block__title=service.name
-                p.service-block__subtitle=service.description
+                div.service-block__subtitle=service.description
                 a(href=service.page).service-block__link.link Подробнее
             .service-block__image
-                img.service-block__image-service(src=service.image, alt="")
                 img.service-block__image-triangle(src="", alt="")
+                img.service-block__image-service.border(src=service.image, alt="")
+                

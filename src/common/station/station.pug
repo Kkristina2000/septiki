@@ -7,7 +7,7 @@ mixin station(title, text, images, characteristics)
         div.station-section__container
             div.station-section__content
                 h3.station-section__title=title
-                div.station-section__description.left
+                div.station-section__description
                     p.text=text
                 div.station-section__table
                     +table(characteristics)
@@ -15,14 +15,14 @@ mixin station(title, text, images, characteristics)
                     a(href='#' class='button').buttons__telegram.button Спросить в Telegram
                     a(href='tel:+375 29 343 94 39' class='button').buttons__phone.button +375 29 343 94 39
             div.station-section__photos
-                img.station__main-photo.photo(src=images[0])
+                img.station__main-photo.border(src=images[0])
                 div
-                    img.photo(src=images[1] alt="Фото")
-                    img.photo(src=images[2] alt="Фото")
-                    img.photo(src=images[3] alt="Фото")
-                    img.photo(src=images[4] alt="Фото")
-                    img.photo(src=images[5] alt="Фото")
-                    img.photo(src=images[6] alt="Фото")
+                    img.border(src=images[1] alt="Фото")
+                    img.border(src=images[2] alt="Фото")
+                    img.border(src=images[3] alt="Фото")
+                    img.border(src=images[4] alt="Фото")
+                    img.border(src=images[5] alt="Фото")
+                    img.border(src=images[6] alt="Фото")
 
 for i in stations 
     +station(i.title, i.text, i.images, i.characteristics)

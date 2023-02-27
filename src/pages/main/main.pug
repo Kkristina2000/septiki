@@ -1,6 +1,7 @@
 -var services = [{name: 'Септики', description: 'Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов. Существуют две основные трактовки понятия «текст»: имманентная и репрезентативная.', page: 'septiki.html', image: 'src/images/septiki/septiki.jpg'},{name: 'Кессоны', description: 'Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов. Существуют две основные трактовки понятия «текст»: имманентная и репрезентативная.', page: 'caissons.html', image: 'src/images/caissons/caissons.jpg'},{name: 'Септики из бетонных колец', description: 'Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов. Существуют две основные трактовки понятия «текст»: имманентная и репрезентативная.', page: 'rings.html', image: 'src/images/rings/rings.jpg'},{name: 'Аренда мини-экскаватора', description: 'Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов. Существуют две основные трактовки понятия «текст»: имманентная и репрезентативная.', page: 'excavator.html', image: 'src/images/excavator/excavator.jpg'}];
 
 -var advantages = [{amount:'10+', text: 'лет на рынкe'},{amount: '7 00+', text: 'проектов'},{amount: '5 70+', text: 'клиентов'}];
+-var photosCompany = ['src/images/company/img1.jpg','src/images/company/img2.jpg','src/images/company/img3.jpg','src/images/company/img4.jpg','src/images/company/img5.jpg','src/images/company/img6.jpg'];
 
 include ../../common/main/main.pug
 include ../../common/advantage-company/advantage-company.pug
@@ -12,18 +13,20 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Главная
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
         link(rel="stylesheet" href="src/scss/styles.css")
     body
         div.wrapper
             include ../../common/header/header.pug
+            include ../../common/main-slider/main-slider.pug
             .advantage-company-block
                 .advantage-company-block__container._container
                     each advantage in advantages
                         +advantage-company(advantage)
             section.services-section 
-                .services-section__container._container 
+                div.services-section__container._container 
                     h1.services-section__title.title Наши услуги
-                    div.services
+                    div.services-section__body
                         each service in services 
                             +service(service)
                 div.main-block__buttons.buttons
@@ -32,7 +35,13 @@ html(lang="en")
             section.company-section
                 .company-section__container._container
                     h1.company-section__title.title О компании
-                        div 
-                    a(href='#').buttons__phone.link Подробнее
+                    div.company-section__body
+                        div.company-section__description
+                            p Горизонтальная станция биологической очистки KANN серии ULTRA имеет производительность от 1000 до 5000 л/сутки и рассчитана на количество проживающих от 4 до 25 человек. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекте. За счет подачи воздуха в станцию, а также дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Полученная на выходе вода не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.
+                        for photo in photosCompany 
+                            img(src=photo alt="")
+                    a(href='#').company-section__link.link Подробнее
             include ../../common/partners/partners.pug
             include ../../common/footer/footer.pug
+    script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+    script(src="src/js/script.js")

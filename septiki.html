@@ -5,463 +5,503 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Септики</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="src/scss/styles.css">
   </head>
   <body>
-    <div class="wrapper"></div>
-    <header class="header">
-      <div class="header__container _container">
-        <div class="header__logo"><a href="#"><img src="src/images/logos/septiki_logo.svg" alt="Логотип"></a></div>
-        <nav class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link active" href="main.html">Главная</a></li>
-            <li class="menu__item"><a class="menu__link" href="septiki.html">Септики</a></li>
-            <li class="menu__item"><a class="menu__link" href="caissons.html">Кессоны</a></li>
-            <li class="menu__item"><a class="menu__link" href="rings.html">Кольца</a></li>
-            <li class="menu__item"><a class="menu__link" href="excavator.html">Мини-эскаватор</a></li>
-            <li class="menu__item"> <a class="menu__link" href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav><a class="header__phone" href="tel:+375293439439">+375 29 343 94 39</a>
-      </div>
-    </header>
-    <main class="main">
-      <section class="main-section">
-        <div class="main-section__container _container">
-          <div class="main-section__top main-block">
-            <div class="main-block__content">
-              <h1 class="main-block__title">Хотите навсегда решить проблему с канализацией?</h1>
-              <div class="main-block__text">Канализация в дом под ключ с гарантией на все работы.</div>
-              <div class="main-block__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375293439439">+375 29 343 94 39</a></div>
-            </div>
-            <div class="main-block__media media"><img class="media__triangle" src="src/images/triangle.svg"/>
-              <div class="media__rectangle"> </div><img class="media__photo" src="src/images/septiki/septiki.jpg"/>
-            </div>
-          </div>
-          <div class="main-section__advantages">
-            <div class="advantages__item"><img class="advantages__icon" src="src/images/icons/advantage.svg" alt="Преимущество"/>
-              <div class="advantages__text">оплата по факту выполненных работ</div>
-            </div>
-            <div class="advantages__item"><img class="advantages__icon" src="src/images/icons/advantage.svg" alt="Преимущество"/>
-              <div class="advantages__text">гарантия на монтаж 3 года</div>
-            </div>
-            <div class="advantages__item"><img class="advantages__icon" src="src/images/icons/advantage.svg" alt="Преимущество"/>
-              <div class="advantages__text">монтажники с опытом работы 5+ лет</div>
-            </div>
-            <div class="advantages__item"><img class="advantages__icon" src="src/images/icons/advantage.svg" alt="Преимущество"/>
-              <div class="advantages__text">Бесплатный выезд на замер</div>
-            </div>
-          </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container _container">
+          <div class="header__logo"><a href="#"><img src="src/images/logos/septiki_logo.svg" alt="Логотип"></a></div>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link active" href="main.html">Главная</a></li>
+              <li class="menu__item"><a class="menu__link" href="septiki.html">Септики</a></li>
+              <li class="menu__item"><a class="menu__link" href="caissons.html">Кессоны</a></li>
+              <li class="menu__item"><a class="menu__link" href="rings.html">Кольца</a></li>
+              <li class="menu__item"><a class="menu__link" href="excavator.html">Мини-эскаватор</a></li>
+              <li class="menu__item"> <a class="menu__link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav><a class="header__phone" href="tel:+375293439439">+375 29 343 94 39</a>
         </div>
-      </section>
-      <section class="stations-section">
-        <h1 class="stations-section__title title">Cтанции биологической очистки</h1>
-                <section class="station-section">
-                  <div class="station-section__container">
-                    <div class="station-section__content">
-                      <h3 class="station-section__title">KANN серии ULTRA</h3>
-                      <div class="station-section__description left">
-                        <p class="text">Горизонтальная станция биологической очистки KANN серии ULTRA имеет производительность от 1 000 до 5 000 л/сутки и рассчитана на количество проживающих от 4 до 25 человек. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекте. За счет подачи воздуха в станцию, а также дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Полученная на выходе вода не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.</p>
+      </header>
+      <main class="main">
+        <section class="main-section">
+          <div class="main-section__container _container">
+            <div class="main-section__top main-block">
+              <div class="main-block__content">
+                <h1 class="main-block__title">Хотите навсегда решить проблему с канализацией?</h1>
+                <div class="main-block__text">Канализация в дом под ключ с гарантией на все работы.</div>
+                <div class="main-block__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375293439439">+375 29 343 94 39</a></div>
+              </div>
+              <div class="main-block__media media"><img class="media__triangle" src="src/images/triangle.svg"/>
+                <div class="media__rectangle"> </div><img class="media__photo" src="src/images/septiki/septiki.jpg"/>
+              </div>
+            </div>
+            <div class="main-section__advantages">
+              <div class="advantages__item"><img class="advantages__icon" src="src/images/icons/advantage.svg" alt="Преимущество"/>
+                <div class="advantages__text">оплата по факту выполненных работ</div>
+              </div>
+              <div class="advantages__item"><img class="advantages__icon" src="src/images/icons/advantage.svg" alt="Преимущество"/>
+                <div class="advantages__text">гарантия на монтаж 3 года</div>
+              </div>
+              <div class="advantages__item"><img class="advantages__icon" src="src/images/icons/advantage.svg" alt="Преимущество"/>
+                <div class="advantages__text">монтажники с опытом работы 5+ лет</div>
+              </div>
+              <div class="advantages__item"><img class="advantages__icon" src="src/images/icons/advantage.svg" alt="Преимущество"/>
+                <div class="advantages__text">Бесплатный выезд на замер</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="stations-section">
+          <h1 class="stations-section__title title">Cтанции биологической очистки</h1>
+                    <section class="station-section">
+                      <div class="station-section__container">
+                        <div class="station-section__content">
+                          <h3 class="station-section__title">KANN серии ULTRA</h3>
+                          <div class="station-section__description">
+                            <p class="text">Горизонтальная станция биологической очистки KANN серии ULTRA имеет производительность от 1 000 до 5 000 л/сутки и рассчитана на количество проживающих от 4 до 25 человек. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекте. За счет подачи воздуха в станцию, а также дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Полученная на выходе вода не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.</p>
+                          </div>
+                          <div class="station-section__table">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th>Модель</th>
+                                            <th>Л/сутки</th>
+                                            <th>Число жителей</th>
+                                            <th>Залповый сброс, л</th>
+                                            <th>BYN</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr> 
+                                            <td class="model">KANN Ultra - 5</td>
+                                            <td>1000</td>
+                                            <td>4-5</td>
+                                            <td>300</td>
+                                            <td class="coast">3540</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Ultra - 6</td>
+                                            <td>1200</td>
+                                            <td>5-6</td>
+                                            <td>360</td>
+                                            <td class="coast">3680</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Ultra - 8</td>
+                                            <td>1600</td>
+                                            <td>6-8</td>
+                                            <td>450</td>
+                                            <td class="coast">3980</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Ultra - 10</td>
+                                            <td>2000</td>
+                                            <td>8-12</td>
+                                            <td>650</td>
+                                            <td class="coast">4180</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Ultra - 15</td>
+                                            <td>3000</td>
+                                            <td>12-16</td>
+                                            <td>875</td>
+                                            <td class="coast">4990</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                          </div>
+                          <div class="station-section__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375 29 343 94 39">+375 29 343 94 39</a></div>
+                        </div>
+                        <div class="station-section__photos"><img class="station__main-photo border" src="src/images/septiki/stations/kann/ultra/ultra.jpg">
+                          <div><img class="border" src="src/images/septiki/stations/kann/ultra/ultra1.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/ultra/ultra2.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/ultra/ultra3.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/ultra/ultra4.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/ultra/ultra5.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/ultra/ultra6.jpg" alt="Фото"></div>
+                        </div>
                       </div>
-                      <div class="station-section__table">
-                                <table class="table">
-                                  <thead>
-                                    <tr>
-                                      <th>Модель</th>
-                                      <th>Л/сутки</th>
-                                      <th>Число жителей</th>
-                                      <th>Залповый сброс, л</th>
-                                      <th>BYN</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr> 
-                                      <td class="model">KANN Ultra - 5</td>
-                                      <td>1000</td>
-                                      <td>4-5</td>
-                                      <td>300</td>
-                                      <td class="coast">3540</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Ultra - 6</td>
-                                      <td>1200</td>
-                                      <td>5-6</td>
-                                      <td>360</td>
-                                      <td class="coast">3680</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Ultra - 8</td>
-                                      <td>1600</td>
-                                      <td>6-8</td>
-                                      <td>450</td>
-                                      <td class="coast">3980</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Ultra - 10</td>
-                                      <td>2000</td>
-                                      <td>8-12</td>
-                                      <td>650</td>
-                                      <td class="coast">4180</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Ultra - 15</td>
-                                      <td>3000</td>
-                                      <td>12-16</td>
-                                      <td>875</td>
-                                      <td class="coast">4990</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                    </section>
+                    <section class="station-section">
+                      <div class="station-section__container">
+                        <div class="station-section__content">
+                          <h3 class="station-section__title">KANN серии BIO</h3>
+                          <div class="station-section__description">
+                            <p class="text">Горизонтальная станция биологической очистки KANN серии BIO имеет производительность от 1 000 до 15 000 л/сутки и рассчитана на количество проживающих от 1 человекf. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекте. За счет подачи воздуха в станцию, а также дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Полученная на выходе вода не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.</p>
+                          </div>
+                          <div class="station-section__table">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th>Модель</th>
+                                            <th>Л/сутки</th>
+                                            <th>Число жителей</th>
+                                            <th>Залповый сброс, л</th>
+                                            <th>BYN</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 1</td>
+                                            <td>1000</td>
+                                            <td>1-5</td>
+                                            <td class="coast">1190</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 1,5</td>
+                                            <td>1500</td>
+                                            <td>1-7</td>
+                                            <td class="coast">1470</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 2</td>
+                                            <td>2000</td>
+                                            <td>1-9</td>
+                                            <td class="coast">1690</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 2,5</td>
+                                            <td>2500</td>
+                                            <td>1-11</td>
+                                            <td class="coast">2090</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 3</td>
+                                            <td>3000</td>
+                                            <td>1-14</td>
+                                            <td class="coast">2550</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 4</td>
+                                            <td>4000</td>
+                                            <td>4-5</td>
+                                            <td class="coast">1190</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 5</td>
+                                            <td>5000</td>
+                                            <td>4-5</td>
+                                            <td class="coast">1470</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 6</td>
+                                            <td>6000</td>
+                                            <td>4-5</td>
+                                            <td class="coast">1690</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 8</td>
+                                            <td>8000</td>
+                                            <td>4-5</td>
+                                            <td class="coast">2090</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 10</td>
+                                            <td>10000</td>
+                                            <td>4-5</td>
+                                            <td class="coast">2550</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN Bio - 15</td>
+                                            <td>15000</td>
+                                            <td>4-5</td>
+                                            <td class="coast">2550</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                          </div>
+                          <div class="station-section__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375 29 343 94 39">+375 29 343 94 39</a></div>
+                        </div>
+                        <div class="station-section__photos"><img class="station__main-photo border" src="src/images/septiki/stations/kann/bio/bio.jpg">
+                          <div><img class="border" src="src/images/septiki/stations/kann/bio/bio1.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/bio/bio2.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/bio/bio3.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/bio/bio4.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/bio/bio5.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/bio/bio6.jpg" alt="Фото"></div>
+                        </div>
                       </div>
-                      <div class="station-section__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375 29 343 94 39">+375 29 343 94 39</a></div>
-                    </div>
-                    <div class="station-section__photos"><img class="station__main-photo photo" src="src/images/septiki/stations/kann/ultra/ultra.jpg">
-                      <div><img class="photo" src="src/images/septiki/stations/kann/ultra/ultra1.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/ultra/ultra2.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/ultra/ultra3.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/ultra/ultra4.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/ultra/ultra5.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/ultra/ultra6.jpg" alt="Фото"></div>
-                    </div>
+                    </section>
+                    <section class="station-section">
+                      <div class="station-section__container">
+                        <div class="station-section__content">
+                          <h3 class="station-section__title">KANN серии V</h3>
+                          <div class="station-section__description">
+                            <p class="text">Вертикальная станция биологической очистки KANN серии V имеет производительность от 700 до 1 600 л/сутки и рассчитана на количество проживающих от 2 до 8 человек. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекта. За счет подачи воздуха в станцию, а так же дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Вода на выходе не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.</p>
+                          </div>
+                          <div class="station-section__table">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th>Модель</th>
+                                            <th>Л/сутки</th>
+                                            <th>Число жителей</th>
+                                            <th>Залповый сброс, л</th>
+                                            <th>BYN</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr> 
+                                            <td class="model">KANN V - 4.0</td>
+                                            <td>800</td>
+                                            <td>3-4</td>
+                                            <td class="coast">2590</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN V - 6.0</td>
+                                            <td>1200</td>
+                                            <td>5-6</td>
+                                            <td class="coast">2890</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN V - 8.0</td>
+                                            <td>1600</td>
+                                            <td>7-8</td>
+                                            <td class="coast">3490</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                          </div>
+                          <div class="station-section__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375 29 343 94 39">+375 29 343 94 39</a></div>
+                        </div>
+                        <div class="station-section__photos"><img class="station__main-photo border" src="src/images/septiki/stations/kann/v/v.jpg">
+                          <div><img class="border" src="src/images/septiki/stations/kann/v/v1.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/v/v2.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/v/v3.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/v/v4.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/v/v5.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/v/v6.jpg" alt="Фото"></div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="station-section">
+                      <div class="station-section__container">
+                        <div class="station-section__content">
+                          <h3 class="station-section__title">KANN серии ECO</h3>
+                          <div class="station-section__description">
+                            <p class="text">Горизонтальная станция биологической очистки KANN серии ECO имеет производительность от 400 до 2 250 л/сутки и рассчитана на количество проживающих от 2 до 15 человек. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекте. За счет подачи воздуха в станцию, а также дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Полученная на выходе вода на выходе не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.</p>
+                          </div>
+                          <div class="station-section__table">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th>Модель</th>
+                                            <th>Л/сутки</th>
+                                            <th>Число жителей</th>
+                                            <th>Залповый сброс, л</th>
+                                            <th>BYN</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr> 
+                                            <td class="model">KANN ECO - 3</td>
+                                            <td>400</td>
+                                            <td>1-3</td>
+                                            <td>100</td>
+                                            <td class="coast">500</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN ECO - 4</td>
+                                            <td>600</td>
+                                            <td>3-4</td>
+                                            <td>200</td>
+                                            <td class="coast">500</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN ECO - 6</td>
+                                            <td>900</td>
+                                            <td>4-6</td>
+                                            <td>300</td>
+                                            <td class="coast">500</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN ECO - 8</td>
+                                            <td>1200</td>
+                                            <td>6-8</td>
+                                            <td>400</td>
+                                            <td class="coast">500</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN ECO - 10</td>
+                                            <td>1500</td>
+                                            <td>8-10</td>
+                                            <td>500</td>
+                                            <td class="coast">500</td>
+                                          </tr>
+                                          <tr> 
+                                            <td class="model">KANN ECO - 15</td>
+                                            <td>2250</td>
+                                            <td>10-15</td>
+                                            <td>750</td>
+                                            <td class="coast">500</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                          </div>
+                          <div class="station-section__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375 29 343 94 39">+375 29 343 94 39</a></div>
+                        </div>
+                        <div class="station-section__photos"><img class="station__main-photo border" src="src/images/septiki/stations/kann/eco/eco.jpg">
+                          <div><img class="border" src="src/images/septiki/stations/kann/eco/eco1.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/eco/eco2.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/eco/eco3.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/eco/eco4.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/eco/eco5.jpg" alt="Фото"><img class="border" src="src/images/septiki/stations/kann/eco/eco6.jpg" alt="Фото"></div>
+                        </div>
+                      </div>
+                    </section>
+        </section>
+        <section class="order-section">
+          <div class="order-section__container _container">
+            <h2 class="order-section__title title">Как заказать?</h2>
+            <div class="order-section__stages">
+              <div class="stages__item item"> 
+                <div class="item__point">01</div>
+                <h3 class="item__stage">Заявка</h3>
+                <div class="item__text">Оставляете заявку на консультацию через телефонный звонок или сообщение в Telegram.</div>
+              </div>
+              <div class="stages__item item"> 
+                <div class="item__point">02</div>
+                <h3 class="item__stage">Замер</h3>
+                <div class="item__text">Выезжаем к вам на  бесплатный замер и подбираем лучший вариант.</div>
+              </div>
+              <div class="stages__item item"> 
+                <div class="item__point">03</div>
+                <h3 class="item__stage">Договор</h3>
+                <div class="item__text">Договариваемся о всех условиях сотрудничества и сроках монтажа, заключаем договор.</div>
+              </div>
+              <div class="stages__item item"> 
+                <div class="item__point">04</div>
+                <h3 class="item__stage">Монтаж</h3>
+                <div class="item__text">В срок осуществляем процесс монтажа и завершаем установку, Станция готова к использованию.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="photos _container">
+          <div class="installation-block"><img src="src/images/septiki/installation/installation1.jpg"><img src="src/images/septiki/installation/installation2.jpg"><img src="src/images/septiki/installation/installation3.jpg"><img src="src/images/septiki/installation/installation4.jpg"><img src="src/images/septiki/installation/installation5.jpg"><img src="src/images/septiki/installation/installation6.jpg"><img src="src/images/septiki/installation/installation7.jpg"><img src="src/images/septiki/installation/installation8.jpg"></div>
+          <div class="main-block__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375293439439">+375 29 343 94 39</a></div>
+        </div>
+        <section class="certificate-section">
+          <div class="certificate-section__container _container">
+            <div class="certificate-section__triangle"></div>
+            <div class="certificate-section__content">
+              <h2 class="certificate-section__title title">Официальные представители</h2>
+              <p class="certificate-section__text">Мы официальные представители лидера по производствуочистных сооружений ООО “КАНН ПРОЕКТ” и реализуем септики по ценам производителя.<br><br> Наша компания - профессиональный подрядчик по монтажу, ремонту и техническому обслуживанию септиков.<br><br>В наличии собственное оборудование и штат опытных инженеров. Предлагаем в аренду услуги миниэкскаватора.</p>
+            </div>
+            <div class="certificate-section__photo">
+              <div class="certificate-section__shadow"></div><img class="certificate-section__image" src="src/images/certificate.jpg" alt="Сертификат">
+            </div>
+          </div>
+        </section>
+        <section class="comment-section _container">
+          <div class="comment-section__container">
+            <h1 class="comment-section__title title">Отзывы</h1>
+            <div class="comment-section__comments comments"> 
+              <div class="swiper _container"> 
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide comment__item">
+                    <p class="comment__text">Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?</p><span class="comment__account">@account</span>
                   </div>
-                </section>
-                <section class="station-section">
-                  <div class="station-section__container">
-                    <div class="station-section__content">
-                      <h3 class="station-section__title">KANN серии BIO</h3>
-                      <div class="station-section__description left">
-                        <p class="text">Горизонтальная станция биологической очистки KANN серии BIO имеет производительность от 1 000 до 15 000 л/сутки и рассчитана на количество проживающих от 1 человекf. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекте. За счет подачи воздуха в станцию, а также дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Полученная на выходе вода не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.</p>
-                      </div>
-                      <div class="station-section__table">
-                                <table class="table">
-                                  <thead>
-                                    <tr>
-                                      <th>Модель</th>
-                                      <th>Л/сутки</th>
-                                      <th>Число жителей</th>
-                                      <th>Залповый сброс, л</th>
-                                      <th>BYN</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 1</td>
-                                      <td>1000</td>
-                                      <td>1-5</td>
-                                      <td class="coast">1190</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 1,5</td>
-                                      <td>1500</td>
-                                      <td>1-7</td>
-                                      <td class="coast">1470</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 2</td>
-                                      <td>2000</td>
-                                      <td>1-9</td>
-                                      <td class="coast">1690</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 2,5</td>
-                                      <td>2500</td>
-                                      <td>1-11</td>
-                                      <td class="coast">2090</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 3</td>
-                                      <td>3000</td>
-                                      <td>1-14</td>
-                                      <td class="coast">2550</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 4</td>
-                                      <td>4000</td>
-                                      <td>4-5</td>
-                                      <td class="coast">1190</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 5</td>
-                                      <td>5000</td>
-                                      <td>4-5</td>
-                                      <td class="coast">1470</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 6</td>
-                                      <td>6000</td>
-                                      <td>4-5</td>
-                                      <td class="coast">1690</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 8</td>
-                                      <td>8000</td>
-                                      <td>4-5</td>
-                                      <td class="coast">2090</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 10</td>
-                                      <td>10000</td>
-                                      <td>4-5</td>
-                                      <td class="coast">2550</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN Bio - 15</td>
-                                      <td>15000</td>
-                                      <td>4-5</td>
-                                      <td class="coast">2550</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                      </div>
-                      <div class="station-section__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375 29 343 94 39">+375 29 343 94 39</a></div>
-                    </div>
-                    <div class="station-section__photos"><img class="station__main-photo photo" src="src/images/septiki/stations/kann/bio/bio.jpg">
-                      <div><img class="photo" src="src/images/septiki/stations/kann/bio/bio1.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/bio/bio2.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/bio/bio3.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/bio/bio4.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/bio/bio5.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/bio/bio6.jpg" alt="Фото"></div>
-                    </div>
+                  <div class="swiper-slide comment__item">
+                    <p class="comment__text">Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. ?</p><span class="comment__account">@account</span>
                   </div>
-                </section>
-                <section class="station-section">
-                  <div class="station-section__container">
-                    <div class="station-section__content">
-                      <h3 class="station-section__title">KANN серии V</h3>
-                      <div class="station-section__description left">
-                        <p class="text">Вертикальная станция биологической очистки KANN серии V имеет производительность от 700 до 1 600 л/сутки и рассчитана на количество проживающих от 2 до 8 человек. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекта. За счет подачи воздуха в станцию, а так же дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Вода на выходе не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.</p>
-                      </div>
-                      <div class="station-section__table">
-                                <table class="table">
-                                  <thead>
-                                    <tr>
-                                      <th>Модель</th>
-                                      <th>Л/сутки</th>
-                                      <th>Число жителей</th>
-                                      <th>Залповый сброс, л</th>
-                                      <th>BYN</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr> 
-                                      <td class="model">KANN V - 4.0</td>
-                                      <td>800</td>
-                                      <td>3-4</td>
-                                      <td class="coast">2590</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN V - 6.0</td>
-                                      <td>1200</td>
-                                      <td>5-6</td>
-                                      <td class="coast">2890</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN V - 8.0</td>
-                                      <td>1600</td>
-                                      <td>7-8</td>
-                                      <td class="coast">3490</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                      </div>
-                      <div class="station-section__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375 29 343 94 39">+375 29 343 94 39</a></div>
-                    </div>
-                    <div class="station-section__photos"><img class="station__main-photo photo" src="src/images/septiki/stations/kann/v/v.jpg">
-                      <div><img class="photo" src="src/images/septiki/stations/kann/v/v1.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/v/v2.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/v/v3.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/v/v4.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/v/v5.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/v/v6.jpg" alt="Фото"></div>
-                    </div>
+                  <div class="swiper-slide comment__item">
+                    <p class="comment__text">Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?</p><span class="comment__account">@account</span>
                   </div>
-                </section>
-                <section class="station-section">
-                  <div class="station-section__container">
-                    <div class="station-section__content">
-                      <h3 class="station-section__title">KANN серии ECO</h3>
-                      <div class="station-section__description left">
-                        <p class="text">Горизонтальная станция биологической очистки KANN серии ECO имеет производительность от 400 до 2 250 л/сутки и рассчитана на количество проживающих от 2 до 15 человек. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекте. За счет подачи воздуха в станцию, а также дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Полученная на выходе вода на выходе не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.</p>
-                      </div>
-                      <div class="station-section__table">
-                                <table class="table">
-                                  <thead>
-                                    <tr>
-                                      <th>Модель</th>
-                                      <th>Л/сутки</th>
-                                      <th>Число жителей</th>
-                                      <th>Залповый сброс, л</th>
-                                      <th>BYN</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr> 
-                                      <td class="model">KANN ECO - 3</td>
-                                      <td>400</td>
-                                      <td>1-3</td>
-                                      <td>100</td>
-                                      <td class="coast">500</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN ECO - 4</td>
-                                      <td>600</td>
-                                      <td>3-4</td>
-                                      <td>200</td>
-                                      <td class="coast">500</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN ECO - 6</td>
-                                      <td>900</td>
-                                      <td>4-6</td>
-                                      <td>300</td>
-                                      <td class="coast">500</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN ECO - 8</td>
-                                      <td>1200</td>
-                                      <td>6-8</td>
-                                      <td>400</td>
-                                      <td class="coast">500</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN ECO - 10</td>
-                                      <td>1500</td>
-                                      <td>8-10</td>
-                                      <td>500</td>
-                                      <td class="coast">500</td>
-                                    </tr>
-                                    <tr> 
-                                      <td class="model">KANN ECO - 15</td>
-                                      <td>2250</td>
-                                      <td>10-15</td>
-                                      <td>750</td>
-                                      <td class="coast">500</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                      </div>
-                      <div class="station-section__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375 29 343 94 39">+375 29 343 94 39</a></div>
-                    </div>
-                    <div class="station-section__photos"><img class="station__main-photo photo" src="src/images/septiki/stations/kann/eco/eco.jpg">
-                      <div><img class="photo" src="src/images/septiki/stations/kann/eco/eco1.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/eco/eco2.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/eco/eco3.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/eco/eco4.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/eco/eco5.jpg" alt="Фото"><img class="photo" src="src/images/septiki/stations/kann/eco/eco6.jpg" alt="Фото"></div>
-                    </div>
+                  <div class="swiper-slide comment__item">
+                    <p class="comment__text">Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?</p><span class="comment__account">@account</span>
                   </div>
-                </section>
-      </section>
-      <section class="order-section">
-        <div class="order-section__container _container">
-          <h2 class="order-section__title title">Как заказать?</h2>
-          <div class="order-section__stages">
-            <div class="stages__item item"> 
-              <div class="item__point">01</div>
-              <h3 class="item__stage">Заявка</h3>
-              <div class="item__text">Оставляете заявку на консультацию через телефонный звонок или сообщение в Telegram.</div>
+                  <div class="swiper-slide comment__item">
+                    <p class="comment__text">Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?</p><span class="comment__account">@account</span>
+                  </div>
+                  <div class="swiper-slide comment__item">
+                    <p class="comment__text">Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?</p><span class="comment__account">@account</span>
+                  </div>
+                  <div class="swiper-slide comment__item">
+                    <p class="comment__text">Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?</p><span class="comment__account">@account</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-scrollbar"></div>
             </div>
-            <div class="stages__item item"> 
-              <div class="item__point">02</div>
-              <h3 class="item__stage">Замер</h3>
-              <div class="item__text">Выезжаем к вам на  бесплатный замер и подбираем лучший вариант.</div>
-            </div>
-            <div class="stages__item item"> 
-              <div class="item__point">03</div>
-              <h3 class="item__stage">Договор</h3>
-              <div class="item__text">Договариваемся о всех условиях сотрудничества и сроках монтажа, заключаем договор.</div>
-            </div>
-            <div class="stages__item item"> 
-              <div class="item__point">04</div>
-              <h3 class="item__stage">Монтаж</h3>
-              <div class="item__text">В срок осуществляем процесс монтажа и завершаем установку, Станция готова к использованию.</div>
+            <div class="comment-section__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375 29 343 94 39">+375 29 343 94 39</a></div>
+          </div>
+        </section>
+        <section class="questions-section">
+          <div class="questions-section__container _container">
+            <h1 class="questions-section__title title">Часто задаваемые вопросы</h1>
+            <div class="questions-section__questions">
+              <div class="questions__container">
+                <div class="questions__question question">
+                  <div class="question__content">
+                    <div class="question__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
+                  </div>
+                </div>
+                <div class="questions__question question">
+                  <div class="question__content">
+                    <div class="question__name">Pulvinar magna purus semper id est lacus.</div>
+                    <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
+                  </div>
+                </div>
+                <div class="questions__question question">
+                  <div class="question__content">
+                    <div class="question__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
+                  </div>
+                </div>
+                <div class="questions__question question">
+                  <div class="question__content">
+                    <div class="question__name">Pulvinar magna purus semper id est lacus.</div>
+                    <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
+                  </div>
+                </div>
+                <div class="questions__question question">
+                  <div class="question__content">
+                    <div class="question__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
+                  </div>
+                </div>
+                <div class="questions__question question">
+                  <div class="question__content">
+                    <div class="question__name">Pulvinar magna purus semper id est lacus.</div>
+                    <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
+        <section class="partners-section">
+          <div class="partners-section__container _container">
+            <h2 class="partners-section__title title">Наши партнеры</h2>
+            <div class="partners-section__partners">
+              <div class="partners__item partner">
+                <div class="partner__logo"><img src="src/images/logos/partners/kann.svg" alt="Логотип"></div>
+                <div class="partner__name">Белорусский производитель очистных сооружений, трубной продукции и ёмкостного оборудования.</div>
+              </div>
+              <div class="partners__item partner">
+                <div class="partner__logo"><img src="src/images/logos/partners/unidelta.svg" alt="Логотип"></div>
+                <div class="partner__name">Итальянский производитель труб и фитингов для систем холодного водо-, газоснабжения, геотермальных систем.</div>
+              </div>
+              <div class="partners__item partner">
+                <div class="partner__logo"><img src="src/images/logos/partners/traidenis.svg" alt="Логотип"></div>
+                <div class="partner__name">Литовский производитель очистных сооружений, ёмкостей из стеклопластика и оборудования для разведения рыб.</div>
+              </div>
+              <div class="partners__item partner">
+                <div class="partner__logo"><img src="src/images/logos/partners/ibo.svg" alt="Логотип"></div>
+                <div class="partner__name">Производитель погружных насосов и других устройств в области насосных технологий.</div>
+              </div>
+              <div class="partners__item partner">
+                <div class="partner__logo"><img src="src/images/logos/partners/ostendorf.svg" alt="Логотип"></div>
+                <div class="partner__name">Ведущий производитель полимерных труб и фитингов из полипропилена.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"> 
+        <div class="footer__container _container">
+          <nav class="footer__menu footer-menu">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link active" href="main.html">Главная</a></li>
+              <li class="menu__item"><a class="footer-menu__link" href="septiki.html">Септики</a></li>
+              <li class="menu__item"><a class="footer-menu__link" href="caissons.html">Кессоны</a></li>
+              <li class="menu__item"><a class="footer-menu__link" href="rings.html">Кольца</a></li>
+              <li class="menu__item"><a class="footer-menu__link" href="excavator.html">Мини-эскаватор</a></li>
+              <li class="menu__item"> <a class="footer-menu__link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="footer__logo"><a href="#"><img src="src/images/logos/septiki_logo.svg" alt="Логотип"></a></div>
         </div>
-      </section>
-      <div class="photos _container">
-        <div class="installation-block"><img src="src/images/septiki/installation/installation1.jpg"><img src="src/images/septiki/installation/installation2.jpg"><img src="src/images/septiki/installation/installation3.jpg"><img src="src/images/septiki/installation/installation4.jpg"><img src="src/images/septiki/installation/installation5.jpg"><img src="src/images/septiki/installation/installation6.jpg"><img src="src/images/septiki/installation/installation7.jpg"><img src="src/images/septiki/installation/installation8.jpg"></div>
-        <div class="main-block__buttons buttons"><a class="button buttons__telegram button" href="#">Спросить в Telegram</a><a class="button buttons__phone button" href="tel:+375293439439">+375 29 343 94 39</a></div>
-      </div>
-      <section class="certificate-section">
-        <div class="certificate-section__container _container">
-          <div class="certificate-section__triangle"></div>
-          <div class="certificate-section__content">
-            <h2 class="certificate-section__title title">Официальные представители</h2>
-            <p class="certificate-section__text">Мы официальные представители лидера по производствуочистных сооружений ООО “КАНН ПРОЕКТ” и реализуем септики по ценам производителя.<br><br> Наша компания - профессиональный подрядчик по монтажу, ремонту и техническому обслуживанию септиков.<br><br>В наличии собственное оборудование и штат опытных инженеров. Предлагаем в аренду услуги миниэкскаватора.</p>
-          </div>
-          <div class="certificate-section__photo">
-            <div class="certificate-section__shadow"></div><img class="certificate-section__image" src="src/images/certificate.jpg" alt="Сертификат">
-          </div>
-        </div>
-      </section>
-      <section class="questions-section">
-        <div class="questions-section__container _container">
-          <h1 class="questions-section__title title">Часто задаваемые вопросы</h1>
-          <div class="questions-section__questions">
-            <div class="questions__container">
-              <div class="questions__question question">
-                <div class="question__content">
-                  <div class="question__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
-                </div>
-              </div>
-              <div class="questions__question question">
-                <div class="question__content">
-                  <div class="question__name">Pulvinar magna purus semper id est lacus.</div>
-                  <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
-                </div>
-              </div>
-              <div class="questions__question question">
-                <div class="question__content">
-                  <div class="question__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
-                </div>
-              </div>
-              <div class="questions__question question">
-                <div class="question__content">
-                  <div class="question__name">Pulvinar magna purus semper id est lacus.</div>
-                  <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
-                </div>
-              </div>
-              <div class="questions__question question">
-                <div class="question__content">
-                  <div class="question__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
-                </div>
-              </div>
-              <div class="questions__question question">
-                <div class="question__content">
-                  <div class="question__name">Pulvinar magna purus semper id est lacus.</div>
-                  <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="partners-section">
-        <div class="partners-section__container _container">
-          <h2 class="partners-section__title title">Наши партнеры</h2>
-          <div class="partners-section__partners">
-            <div class="partners__item partner">
-              <div class="partner__logo"><img src="src/images/logos/partners/kann.svg" alt="Логотип"></div>
-              <div class="partner__name">Белорусский производитель очистных сооружений, трубной продукции и ёмкостного оборудования.</div>
-            </div>
-            <div class="partners__item partner">
-              <div class="partner__logo"><img src="src/images/logos/partners/unidelta.svg" alt="Логотип"></div>
-              <div class="partner__name">Итальянский производитель труб и фитингов для систем холодного водо-, газоснабжения, геотермальных систем.</div>
-            </div>
-            <div class="partners__item partner">
-              <div class="partner__logo"><img src="src/images/logos/partners/traidenis.svg" alt="Логотип"></div>
-              <div class="partner__name">Литовский производитель очистных сооружений, ёмкостей из стеклопластика и оборудования для разведения рыб.</div>
-            </div>
-            <div class="partners__item partner">
-              <div class="partner__logo"><img src="src/images/logos/partners/ibo.svg" alt="Логотип"></div>
-              <div class="partner__name">Производитель погружных насосов и других устройств в области насосных технологий.</div>
-            </div>
-            <div class="partners__item partner">
-              <div class="partner__logo"><img src="src/images/logos/partners/ostendorf.svg" alt="Логотип"></div>
-              <div class="partner__name">Ведущий производитель полимерных труб и фитингов из полипропилена.</div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer"> 
-      <div class="footer__container _container">
-        <nav class="footer__menu footer-menu">
-          <ul class="footer-menu__list">
-            <li class="footer-menu__item"><a class="footer-menu__link active" href="#">Главная</a></li>
-            <li class="menu__item"><a class="footer-menu__link" href="#">Септики</a></li>
-            <li class="menu__item"><a class="footer-menu__link" href="#">Кессоны</a></li>
-            <li class="menu__item"><a class="footer-menu__link" href="#">Кольца</a></li>
-            <li class="menu__item"><a class="footer-menu__link" href="#">Мини-эскаватор</a></li>
-            <li class="menu__item"> <a class="footer-menu__link" href="#">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/js/comments.js"></script>
   </body>
 </html>

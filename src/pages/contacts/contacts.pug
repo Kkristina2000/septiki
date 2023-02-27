@@ -11,10 +11,12 @@ html(lang="en")
         include ../../common/header/header.pug
         main.main
             section.contacts-section._container
-                div.contacts-section__content
-                    h1.stations-section__title.title Контакты
-                    p Индивидуальный предприниматель Силко Александр Александрович УНП 192947174г. Минск, Ул. Масюковщина 2а Режим работы: 09.00-21.00 +375 29 343 94 39septiki@mail.by
-                    div.main-block__buttons.buttons
-                        a(href='#' class='button').buttons__telegram.button Спросить в Telegram
-                div.contacts-section__map
+                div.contacts-section__container
+                    div.contacts-section__content
+                        h1.contacts-section__title Контакты
+                        div.contacts-section__text Индивидуальный предприниматель<br>Силко Александр Александрович<br>УНП 192947174<br>г. Минск, Ул. Масюковщина 2а<br><br>Режим работы: 09.00-21.00<br><br> +375 29 343 94 39<br>septiki@mail.by
+                        div.contacts-section__buttons.buttons
+                            a(href='#' class='button').buttons__telegram.button Спросить в Telegram
+                    div.contacts-section__map
+                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d587.1890951577203!2d27.429181361908395!3d53.93607186359877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc4c03f8438f5%3A0x40045bf9548b834a!2z0YPQu9C40YbQsCDQnNCw0YHRjtC60L7QstGJ0LjQvdCwIDLQsCwg0JzRltC90YHQug!5e0!3m2!1sru!2sby!4v1677510648465!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
         include ../../common/footer/footer.pug

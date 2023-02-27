@@ -3,6 +3,18 @@
     flex-direction: column;
     align-items: center;
     padding: 140px 0px 0px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+    }
+    &__septiki{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 45px;
+        row-gap: 50px;
+    }
 }
 .rings-block{
     display: flex;

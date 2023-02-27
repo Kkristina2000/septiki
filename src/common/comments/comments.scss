@@ -1,0 +1,39 @@
+
+.comment-section{
+    padding-bottom: 150px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .swiper-wrapper{
+        display: flex;
+        height: auto;
+    }
+    .swiper-slide{
+        min-height: 300px;
+    }
+
+}
+
+.comment{
+    &__item{
+        background-color: $turquoise-light;
+        padding: 15px;
+        width: 270px;
+        border-radius: 5px;
+    }
+    &__text{
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+    &__account{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: right;
+    }
+}

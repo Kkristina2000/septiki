@@ -1,13 +1,30 @@
 .contacts-section{
-    display: flex;
-    gap: 85px;
-    padding-top: 100px;
+    padding: 100px 0px;
     height: auto;
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 85px;
+    }
     &__content{
         display: flex;
         flex-direction: column;
+        gap: 50px;
         align-items: flex-start;
         width: 360px;
-
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    &__text{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #272A31;
     }
 }

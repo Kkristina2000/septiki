@@ -5,11 +5,11 @@ mixin table(characteristics)
     table.table
         thead
             tr
-                if (header1.length==characteristics[0].length)
+                if (header1.length===characteristics[0].length)
                     each item in header1
                         th=item
 
-                else if (header2.length==characteristics[0].length)
+                else if (header2.length===characteristics[0].length)
                     each item in header2
                         th=item
         tbody

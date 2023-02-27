@@ -1,8 +1,9 @@
 -var photoExcavator = 'src/images/excavator/excavator.jpg';
 -var questions = [{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'}]
-
+-var comments = [{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'}];
 include ../../common/main/main.pug
- include ../../common/questions/questions.pug
+include ../../common/comments/comments.pug
+include ../../common/questions/questions.pug
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,7 @@ include ../../common/main/main.pug
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мини-экскаватор</title>
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
     link(rel="stylesheet" href="src/scss/styles.css")
 </head>
 <body>
@@ -32,7 +34,9 @@ include ../../common/main/main.pug
                 div.main-block__buttons.buttons
                     a(href='#' class='button').buttons__telegram.button Спросить в Telegram
                     a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
-            //- include ../../common/comment/comment.pug
+            +comments(comments)
             +questions(questions)
             include ../../common/partners/partners.pug
             include ../../common/footer/footer.pug
+    script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+    script(src="src/js/comments.js")

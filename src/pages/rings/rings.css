@@ -4,6 +4,19 @@
   align-items: center;
   padding: 140px 0px 0px;
 }
+.rings-section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+.rings-section__septiki {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 45px;
+       column-gap: 45px;
+  row-gap: 50px;
+}
 
 .rings-block {
   display: flex;

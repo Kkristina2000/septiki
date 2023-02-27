@@ -24,6 +24,24 @@
 .service-block__image {
   width: 100%;
   height: 100%;
+  display: flex;
+  position: relative;
+}
+.service-block__image-triangle {
+  display: inline-block;
+  border: 201px solid transparent;
+  border-bottom: 395px solid #32949B;
+  transform: rotate(35deg);
+  width: 360px;
+  height: 421px;
+  left: 297px;
+  top: -230px;
+  position: absolute;
+}
+.service-block__image-service {
+  width: 530px;
+  height: 355px;
+  position: relative;
 }
 
 .service-block:nth-child(even) .service-block__container {

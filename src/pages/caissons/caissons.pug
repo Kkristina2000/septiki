@@ -2,8 +2,10 @@
 -var photoCaisson = 'src/images/caissons/caisson.jpg';
 -var questions = [{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'},{name: 'Pulvinar magna purus semper id est lacus.', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat.'}];
 -var caissons = [{model: 'KANN KS 800/1800', size: '800 внутр., 840 наружн.', height: '1 700', cost: '990'},{model: 'KANN KS 1000/1800', size: '1 000 внутр., 1 050 наружн.', height: '1 700', cost: '1 490'},{model: 'KANN KS 1200/1800', size: '1 200 внутр., 1 250 наружн.', height: '1 800', cost: '1 790'},{model: 'KANN KS 1400/1800', size: '1 400 внутр., 1 460 наружн.', height: '1 800', cost: '2 190'}];
+-var comments = [{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'},{text: 'Три месяца назад началось удивительное и совершенно новое изучение и погружение в тему конфликтов. Удивительное и новое погружение в самого себя.Для меня тема изучения и проработки своей личности не новая. Возможно, я напишу об этом пост) а возможно и нет)Просто теперь я задалась вопросом; а почему мы конфликтуем? Почему так сложно выдержать конфликтную ситуацию?',account: '@account'}];
 
 include ../../common/table/table.pug
+include ../../common/comments/comments.pug
 include ../../common/main/main.pug
 include ../../common/questions/questions.pug
 
@@ -14,37 +16,41 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Кессоны
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
         link(rel="stylesheet" href="src/scss/styles.css")
     body
         div.wrapper
             include ../../common/header/header.pug
-            +main('Кессоны', 'Канализация в дом под ключ с гарантией на все работы.', photoCaissons, 'оплата по факту выполненных работ', 'гарантия на монтаж 3 года', 'монтажники с опытом работы 5+ лет','Бесплатный выезд на замер')
-            section.caissons-section
-                div.caissons-section__container._container
-                    h1.caissons-section__title.title Кессоны для скважин
-                    div.caissons-section__caisson-block
-                        div.caisson-block__content
-                            h2.caisson-block__name kann серии Kn
-                            div.caisson-block__text Все модели изготовлены из спиральновитой трубы. Корпус имеет толщину 25 мм и выполнен из первичного полиэтилена марки ПЭ100. Материал корпуса устойчив к низким и высоким температурам, что позволяет использовать его в любых погодных условиях. Площадь дна на 35% больше его корпуса, это обеспечивает дополнительную фиксацию в грунте. Масса наружного грунта давит на дно кессона обеспечивая большую прижимную силу.100% герметизация обсадной трубы осуществляется при помощи двух способов соединения: польской резиновой муфты диаметром 90-133 мм или российской термоусадочной муфты диаметром 50-160 мм
-                        img.caisson-block__image(src=photoCaisson, alt="kann серии Kn")
-            section.row-section
-                div.row-section__container._container
-                    h1.row-section__title.title Модельный ряд
-                    +table-caisson(caissons)
+            main.main
+                +main('Кессоны', 'Канализация в дом под ключ с гарантией на все работы.', photoCaissons, 'оплата по факту выполненных работ', 'гарантия на монтаж 3 года', 'монтажники с опытом работы 5+ лет','Бесплатный выезд на замер')
+                section.caissons-section
+                    div.caissons-section__container._container
+                        h1.caissons-section__title.title Кессоны для скважин
+                        div.caissons-section__caisson-block
+                            div.caisson-block__content
+                                h2.caisson-block__name kann серии Kn
+                                div.caisson-block__text Все модели изготовлены из спиральновитой трубы. Корпус имеет толщину 25 мм и выполнен из первичного полиэтилена марки ПЭ100. Материал корпуса устойчив к низким и высоким температурам, что позволяет использовать его в любых погодных условиях. Площадь дна на 35% больше его корпуса, это обеспечивает дополнительную фиксацию в грунте. Масса наружного грунта давит на дно кессона обеспечивая большую прижимную силу.100% герметизация обсадной трубы осуществляется при помощи двух способов соединения: польской резиновой муфты диаметром 90-133 мм или российской термоусадочной муфты диаметром 50-160 мм
+                            img.caisson-block__image(src=photoCaisson, alt="kann серии Kn")
+                section.row-section
+                    div.row-section__container._container
+                        h1.row-section__title.title Модельный ряд
+                        +table-caisson(caissons)
+                        div.main-block__buttons.buttons
+                            a(href='#' class='button').buttons__telegram.button Спросить в Telegram
+                            a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
+                include ../../common/order/order.pug
+                div.caissons-block._container
+                    .caissons-photos 
+                        img(src="src/images/caissons/caisson1.jpg", alt="Фото")
+                        img(src="src/images/caissons/caisson2.jpg", alt="Фото")
+                        img(src="src/images/caissons/caisson3.jpg", alt="Фото")
                     div.main-block__buttons.buttons
                         a(href='#' class='button').buttons__telegram.button Спросить в Telegram
                         a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
-            include ../../common/order/order.pug
-            div.caissons-block._container
-                .caissons-photos 
-                    img(src="src/images/caissons/caisson1.jpg", alt="Фото")
-                    img(src="src/images/caissons/caisson2.jpg", alt="Фото")
-                    img(src="src/images/caissons/caisson3.jpg", alt="Фото")
-                div.main-block__buttons.buttons
-                    a(href='#' class='button').buttons__telegram.button Спросить в Telegram
-                    a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
-            include ../../common/certificate/certificate.pug
-            +questions(questions)
-            include ../../common/partners/partners.pug
+                include ../../common/certificate/certificate.pug
+                +comments(comments)
+                +questions(questions)
+                include ../../common/partners/partners.pug
             include ../../common/footer/footer.pug
-            
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+        script(src="src/js/comments.js")    
