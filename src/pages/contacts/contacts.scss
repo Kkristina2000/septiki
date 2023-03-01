@@ -1,24 +1,52 @@
 .contacts-section{
     padding: 100px 0px;
     height: auto;
+    @media(max-width: $mobile){
+        padding: 70px 0px;
+    }
     &__container{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 85px;
+        @media(max-width: $tablet){
+            gap: 60px;
+        }
+        @media(max-width: $mobile){
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
     }
     &__content{
         display: flex;
         flex-direction: column;
         gap: 50px;
+        text-align: start;
         align-items: flex-start;
         width: 360px;
+        @media(max-width: $tablet){
+            width: 260px;
+        }
+        @media(max-width: $mobile){
+            align-items: center;
+            width: 230px;
+        }
     }
     &__title{
         font-weight: 700;
         font-size: 35px;
         line-height: 40px;
         text-transform: uppercase;
+        @media(max-width: $tablet){
+            font-size: 25px;
+            line-height: 30px;
+        }
+        @media(max-width: $mobile){
+            text-align: center;
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
     &__text{
         font-weight: 300;
@@ -26,5 +54,18 @@
         line-height: 20px;
         letter-spacing: 0.02em;
         color: #272A31;
+        @media(max-width: $mobile){
+            font-size: 12px;
+        }
+    }
+    iframe{
+        @media(max-width: $tablet){
+            width: 330px;
+            height: 240px;
+        }
+        @media(max-width: $mobile){
+            width: 361px;
+            height: 240px;
+        }
     }
 }

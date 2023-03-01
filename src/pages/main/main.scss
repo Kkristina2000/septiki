@@ -19,6 +19,11 @@
         flex-direction: column;
         gap: 75px;
     }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        row-gap: 90px;
+    }
     .services{
         display: flex;
         flex-direction: column;
@@ -45,10 +50,14 @@
     &__description{
         display: flex;
         background-color: $grey;
-        padding: 14px 28px 9px 89px;
+        padding: 60px 28px 18px 89px;
         position: relative;
         left: 0px;
         width: 49%;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
         p{
             width: 530px;
             text-align: start;

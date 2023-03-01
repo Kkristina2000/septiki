@@ -1,24 +1,49 @@
 .certificate-section{
     padding: 140px 0px;
-    position: relative;
+    @media(max-width: $tablet){
+        position: relative;
+    }
+
+    @media(max-width: $mobile){
+        max-width: 199px;
+        left: -107px;
+    }
     &__triangle{
-        border: 160px solid transparent;
-        border-bottom: 135px solid $turquoise-light;
-        border-left: 190px solid $turquoise-light;
+        border: 216px solid transparent;
+        border-bottom: 164px solid $turquoise-light;
+        border-left: 282px solid $turquoise-light;
         position: absolute;
         left: 0px;
-        bottom: 0px;
+        height: 100%;
+        @media(max-width: $tablet){
+            height: auto;
+        }
+    
+        @media(max-width: $mobile){
+            max-width: 199px;
+            left: -107px;
+        }
     }
     &__container{
         display: flex;
         gap: 175px;
         position: relative;
         justify-content: center;
+        @media(max-width: $tablet){
+            position: static;
+            justify-content: inherit;
+        }
+
+        @media(max-width: $mobile){
+            max-width: 199px;
+            left: -107px;
+        }
     }
     &__content{
         display: flex;
         flex-direction: column;
         gap: 60px;
+        position: relative;
     }
     &__photo{
         position: relative;
@@ -26,10 +51,29 @@
     &__image{
         position: absolute;
         top: 0px;
+        @media(max-width: $tablet){
+            right: 90px;
+        }
+        @media(max-width: $mobile){
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            >img{
+                width: 100%;
+                height: 300px;
+            }
+        }
     }
     &__text{
         width: 480px;
-        position: relative;
+        @media(max-width: $tablet){
+            width: 350px;
+        }
+
+        @media(max-width: $mobile){
+            max-width: 199px;
+            left: -107px;
+        }
     }
     &__shadow{
         width: 200px;
@@ -38,5 +82,8 @@
         position: relative;
         left: 60px;
         bottom: 7px;
+        @media(max-width: $tablet){
+            left: -80px;
+        }
     }
 }

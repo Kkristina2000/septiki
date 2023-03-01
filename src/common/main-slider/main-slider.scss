@@ -1,24 +1,32 @@
+.swiper-button-prev,
+.swiper-button-next{
+    color: #32949B;
+}
+.swiper-button-next{
+    right: 100px;
+}
+.swiper-button-prev{
+    left: 100px;
+}
+.main-slider{
+    margin-top: 80px;
+}
 .swiper{
-    .swiper-wrapper{
-        margin-top: 80px;
-    }
-    
-    .swiper-button-prev,
-    .swiper-button-next{
-        color: #32949B;
-    }
     .slide{
         &__image{
             background: url("../images/slider/slide.jpg");
+            display: flex;
             align-items: center;
             width: 100%;
             height: 540px;
         }
         &__content{
+            position: relative;
             display: flex;
             flex-direction: column;
             gap: 40px;
             color: $white;
+            margin-left: 60px;
         }
         &__title{
             font-weight: 700;
@@ -33,6 +41,7 @@
             width: 445px;
         }
         &__image-shadow{
+            position: absolute;
             width: 100%;
             height: 100%;
             z-index: 0;

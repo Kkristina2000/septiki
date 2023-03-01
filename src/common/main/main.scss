@@ -1,18 +1,18 @@
 .main-section{
-
     &__container{
         display: flex;
         flex-direction: column;
     }
-
     &__top{
         display: flex;
         gap: 120px;
         justify-content: space-between;
         align-items: center;
         margin-top: -60px;
+        @media(max-width: $mobile){
+            padding: 40px 0px 80px;
+        }
     }
-
     &__advantages{
         display: flex;
         flex-wrap: wrap;
@@ -22,7 +22,6 @@
         @media(max-width: $tablet){
             justify-content: space-around;
         }
-    
     }
 }
 .main-block{
@@ -76,6 +75,8 @@
             margin-top: 20px;
         }
         @media(max-width: $mobile){
+            position: absolute;
+            top: 300px;
             margin-top: 40px;
         }
     }
@@ -93,11 +94,12 @@
         @media(max-width: $tablet){
             max-width: 300px;
             left:-110px;
-            top: 13px;
+            top: 64px;
         }
 
         @media(max-width: $mobile){
-            max-width: 230px;
+            max-width: 199px;
+            left: -107px;
         }
     }
 
@@ -114,9 +116,10 @@
             left: -26px;
             top: 145px;
         }
-        @media(max-width: $tablet){
+        @media(max-width: $mobile){
             width: 180px;
             height: 120px;
+            top: 75px;
 
         }
     }
@@ -133,9 +136,10 @@
             left: -66px;
         }
         @media(max-width: $mobile){
-            width: 180px;
-            height: 125px;
+            width: 200px;
+            height: 155px;
             line-height: 20px;
+            right: 85px;
         }
     }
 }

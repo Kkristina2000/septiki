@@ -18,30 +18,31 @@ html(lang="en")
     body
         div.wrapper
             include ../../common/header/header.pug
-            include ../../common/main-slider/main-slider.pug
-            .advantage-company-block
-                .advantage-company-block__container._container
-                    each advantage in advantages
-                        +advantage-company(advantage)
-            section.services-section 
-                div.services-section__container._container 
-                    h1.services-section__title.title Наши услуги
-                    div.services-section__body
-                        each service in services 
-                            +service(service)
-                div.main-block__buttons.buttons
-                    a(href='#' class='button').buttons__telegram.button Спросить в Telegram
-                    a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
-            section.company-section
-                .company-section__container._container
-                    h1.company-section__title.title О компании
-                    div.company-section__body
-                        div.company-section__description
-                            p Горизонтальная станция биологической очистки KANN серии ULTRA имеет производительность от 1000 до 5000 л/сутки и рассчитана на количество проживающих от 4 до 25 человек. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекте. За счет подачи воздуха в станцию, а также дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Полученная на выходе вода не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.
-                        for photo in photosCompany 
-                            img(src=photo alt="")
-                    a(href='#').company-section__link.link Подробнее
-            include ../../common/partners/partners.pug
+            main.main
+                include ../../common/main-slider/main-slider.pug
+                .advantage-company-block
+                    .advantage-company-block__container._container
+                        each advantage in advantages
+                            +advantage-company(advantage)
+                section.services-section 
+                    div.services-section__container._container 
+                        h1.services-section__title.title Наши услуги
+                        div.services-section__body
+                            each service in services 
+                                +service(service)
+                    div.main-block__buttons.buttons
+                        a(href='#' class='button').buttons__telegram.button Спросить в Telegram
+                        a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
+                section.company-section
+                    .company-section__container._container
+                        h1.company-section__title.title О компании
+                        div.company-section__body
+                            div.company-section__description
+                                p Горизонтальная станция биологической очистки KANN серии ULTRA имеет производительность от 1000 до 5000 л/сутки и рассчитана на количество проживающих от 4 до 25 человек. Принцип работы септика основан не мелко-пузырчатой аэрации, которую создает аэрационная установка, поставляемая в комплекте. За счет подачи воздуха в станцию, а также дополнительных механизмов очистки происходит полная очистка стоков до уровня 98%. Полученная на выходе вода не имеет запаха, прозрачна и бесцветна. Такую воду можно дренировать в грунт.
+                            for photo in photosCompany 
+                                img(src=photo alt="")
+                        a(href='#').company-section__link.link Подробнее
+                include ../../common/partners/partners.pug
             include ../../common/footer/footer.pug
     script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
     script(src="src/js/script.js")

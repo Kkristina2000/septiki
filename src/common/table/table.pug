@@ -5,7 +5,7 @@ mixin table(characteristics)
     table.table
         thead
             tr
-                if (header1.length===characteristics[0].length)
+                if (characteristics[0].reset)
                     each item in header1
                         th=item
 
