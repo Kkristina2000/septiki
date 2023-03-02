@@ -62,7 +62,7 @@ input {
 }
 
 .services-section {
-  padding: 150px 0px 0px;
+  padding: 120px 0px 0px;
 }
 @media (max-width: 768px) {
   .services-section {
@@ -72,7 +72,7 @@ input {
 .services-section__container {
   display: flex;
   flex-direction: column;
-  gap: 75px;
+  gap: 100px;
 }
 .services-section__body {
   display: flex;
@@ -109,7 +109,7 @@ input {
 .company-section__description {
   display: flex;
   background-color: #E5E5E5;
-  padding: 60px 28px 18px 89px;
+  padding: 30px 28px 30px 30px;
   position: relative;
   left: 0px;
   width: 49%;
@@ -224,6 +224,7 @@ input {
 .caissons-section__caisson-block {
   display: flex;
   justify-content: space-between;
+  align-items: end;
   gap: 90px;
 }
 .caisson-block__name {
@@ -320,6 +321,34 @@ input {
   }
 }
 
+.excavator-section__title {
+  margin-top: 130px;
+}
+
+.excavator-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #161414;
+}
+
+.excavator-text {
+  padding: 30px;
+}
+
+.excavator-block {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.caisson-excavaors {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
 .contacts-section {
   padding: 100px 0px;
   height: auto;
@@ -370,7 +399,6 @@ input {
   font-weight: 700;
   font-size: 35px;
   line-height: 40px;
-  text-transform: uppercase;
 }
 @media (max-width: 768px) {
   .contacts-section__title {
@@ -442,6 +470,17 @@ input {
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 0.02em;
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
 }
 
 .menu__list {
@@ -536,7 +575,7 @@ input {
   }
 }
 .main-block__buttons {
-  margin-top: 89px;
+  margin-top: 80px;
 }
 @media (max-width: 768px) {
   .main-block__buttons {
@@ -671,7 +710,7 @@ input {
 
 .advantagy-company-block {
   padding: 10px;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .advantagy-company-block__container {
   display: flex;
@@ -832,7 +871,7 @@ input {
   border-radius: 5px;
   background: #E5E5E5;
   border-radius: 5px 5px 0px 0px;
-  border: 1px solid #656565;
+  border: 1px solid #9DDEE2;
 }
 .septik-card__table tr {
   padding: 0px 25px;
@@ -1197,6 +1236,9 @@ th {
   flex-direction: column;
   gap: 50px;
 }
+.comment-section__buttons {
+  margin-top: 40px;
+}
 .comment-section .swiper-wrapper {
   display: flex;
   height: auto;
@@ -1313,7 +1355,7 @@ th {
 .partners-section__partners {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 60px;
+  row-gap: 90px;
   justify-content: center;
 }
 
@@ -1362,6 +1404,9 @@ th {
 .footer__menu {
   display: flex;
   flex-direction: column;
+}
+.footer__text {
+  color: #FFFFFF;
 }
 .footer__logo {
   height: 100px;
