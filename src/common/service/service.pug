@@ -1,0 +1,12 @@
+mixin service(service)
+    article.service-block
+        .service-block__container._container
+            div.service-block__content
+                h2.service-block__title=service.name
+                div.service-block__subtitle=service.description
+                a(href=service.page).service-block__link.link Подробнее
+            .service-block__image
+                img.service-block__image-triangle(src="src/images/triangle-service.svg", alt="")
+                img.service-block__image-service.border(src=service.image, alt="")
+            h2.service-block__title.service-adaptive=service.name
+                

@@ -1,0 +1,134 @@
+.advantage-company-block{
+    @media(max-width: 600px){
+        margin: 60px 0px 0px;
+    }
+    @media(max-width: $mobile){
+        margin: 40px 0px;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        @media(max-width: $tablet){
+            justify-content: center;
+            gap: 40px;
+        }
+        @media(max-width: 650px){
+            gap: 10px;
+        }
+        @media(max-width: 400px){
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+        }
+    }
+}
+.services-section{
+    padding: 120px 0px 0px;
+    @media(max-width: $tablet){
+        padding: 70px 0px 0px;
+    }
+    @media(max-width: $mobile){
+        padding: 0px;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        @media(max-width: $tablet){
+            gap: 30px;
+        }
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        row-gap: 90px;
+        @media(max-width: $tablet){
+            gap: 30px;
+        }
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+
+    }
+    &__buttons{
+        display: flex;
+        gap: 40px;
+        height: 40px;
+        @media(max-width: $tablet){
+            display: none;
+        }
+    }
+}
+.company-section{
+        padding: 150px 0px 0px;
+
+        @media(max-width: $tablet){
+        padding: 70px 0px 0px;
+        }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        text-align: right;
+
+        @media(max-width: $tablet){
+            gap: 40px;
+        }
+    }
+    &__body{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        @media(max-width: $tablet){
+            justify-content:space-around;
+        }
+            >img{
+                width: 22%;
+                height: 22%;
+                object-fit: cover;
+                @media(max-width: $tablet){
+                    width: 45%;
+                }
+            }
+    }
+    &__description{
+        display: flex;
+        background-color: $grey;
+        padding: 30px 28px 30px 30px;
+        position: relative;
+        left: 0px;
+        width: 48%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        p{
+            width: 530px;
+            text-align: start;
+            @media(max-width: $tablet){
+                width: 100%;
+            }
+        }
+        @media(max-width: $tablet){
+            width: 100%;
+        }
+    }
+    &__link{
+        @media(max-width: $tablet){
+            display: none;
+        }
+    }
+    &__images{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+    } 
+}

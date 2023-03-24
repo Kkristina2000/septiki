@@ -1,0 +1,11 @@
+-var stages = [{point: '01', stage: 'Заявка', text: 'Оставляете заявку на консультацию через телефонный звонок или сообщение в Telegram.'},{point: '02', stage: 'Замер', text: 'Выезжаем к вам на  бесплатный замер и подбираем лучший вариант.'},{point: '03', stage: 'Договор', text: 'Договариваемся о всех условиях сотрудничества и сроках монтажа, заключаем договор.'},{point: '04', stage: 'Монтаж', text: 'В срок осуществляем процесс монтажа и завершаем установку. Станция готова к использованию.'}]
+
+section.order-section
+    div.order-section__container._container
+        h2.order-section__title.title Как заказать?
+        div.order-section__stages
+            for i in stages
+                div.stages__item.item 
+                    div.item__point=i.point
+                    h3.item__stage=i.stage
+                    div.item__text=i.text

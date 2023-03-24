@@ -1,0 +1,67 @@
+.footer{
+    background-color: $grey-dark;
+    width: 100%;
+    padding: 40px 0px;
+    @media(max-width: $tablet){
+        padding: 20px 0px;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        @media(max-width: $tablet){
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    &__menu{
+        display: flex;
+        flex-direction: column;
+    }
+    &__text{
+        color: $white;
+        text-align: end;
+        font-size: 12px;
+        @media(max-width: $tablet){
+            text-align: center;
+        }
+        @media(max-width: $mobile){
+            text-align: center;
+        }
+    }
+    &__logo{
+        height: 100px;
+        margin: 0px auto;
+        @media(max-width: $tablet){
+            height: 70px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.footer-menu{
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        @media(max-width: $tablet){
+            display: none;
+        }
+    }
+    
+    &__link{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: $white;
+
+        @media(max-width: $mobile){
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+}

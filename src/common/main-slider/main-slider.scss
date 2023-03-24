@@ -1,0 +1,102 @@
+.swiper-button-prev,
+.swiper-button-next{
+    color: #32949B;
+    z-index: 0;
+
+}
+.swiper-button-prev{
+    right: 0px;  
+    @media(max-width: 600px){
+        display: none;
+    }
+}
+.swiper-button-next{
+    @media(max-width: 600px){
+        display: none;
+    }
+}
+.main-slider{
+    width: 90%;
+    @media(max-width: 600px){
+        width: 100%;
+    }
+}
+
+.swiper{
+    margin-top: 40px;
+    @media(max-width: $tablet){
+        margin-top: 30px;
+    }
+    .slide{
+        &__image{
+            display: flex;
+            align-items: center;
+            height: 560px;
+            position: relative;
+            >img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            @media(max-width: $tablet){
+                height: 300px;
+            }
+        }
+        &__content{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            color: $white;
+            margin-left: 60px;
+            gap: 40px;
+            width: 520px;
+            @media(max-width: $tablet){
+                margin-left: 30px;
+                gap: 30px;
+                width: auto;
+            }
+            @media(max-width: $mobile){
+                margin-left: 10px;
+                gap: 30px;
+                width: auto;
+            }
+        }
+        &__title{
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 42px;
+            
+            @media(max-width: $tablet){
+                font-size: 25px;
+                line-height: 30px;
+            }
+            @media(max-width: 600px){
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+        &__subtitle{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            width: 445px;
+
+            @media(max-width: $tablet){
+                font-size: 15px;
+                line-height: 29px;
+                width: 220px;
+            }
+            @media(max-width: 600px){
+                font-size: 13px;
+                line-height: 29px;
+            }
+        }
+        &__image-shadow{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background: rgba(0,0,0,0.6);
+        }
+    }    
+}

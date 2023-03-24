@@ -1,0 +1,126 @@
+.certificate-section{
+    padding: 90px 0px;
+    @media(max-width: $tablet){
+        position: relative;
+        padding: 60px 0px 0px;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 50px;
+        text-transform: uppercase;
+        text-align: left;
+        top: 30px;
+        position: relative;
+        padding: 0px 0px 0px 15px;
+        text-align: start;
+        @media(max-width: $tablet){
+            text-align: center;
+            padding: 0px;
+        }
+        @media(max-width: $mobile){
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+    
+    }
+    &__triangle{
+        border: 211px solid transparent;
+        border-bottom: 249px solid $turquoise-light;
+        border-left: 172px solid $turquoise-light;
+        position: absolute;
+        left: -30px;
+        height: 100%;
+        @media(max-width: $tablet){
+            height: auto;
+            border: 196px solid transparent;
+            border-bottom: 237px solid #9DDEE2;
+            border-left: 160px solid #9DDEE2
+        }
+        @media(max-width: 500px){
+            display: none;
+        }
+    }
+    &__container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        gap:30px;
+        @media(max-width: $tablet){
+            position: static;
+            justify-content: inherit;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding-left: 20px;
+        @media(max-width: $tablet){
+            justify-content: space-around;
+            gap: 10px;
+            padding-left: 0px;
+        }
+        @media(max-width: 500px){
+            flex-direction: column-reverse;
+            justify-content: end;
+            gap: 20px;
+        }
+    }
+    &__photo{
+        width: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        @media(max-width: $tablet){
+            width: auto;
+        }
+    }
+    &__image{
+        position: absolute;
+        bottom: 0px;
+        @media(max-width: $tablet){
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__text{
+        max-width: 480px;
+        @media(max-width: $tablet){
+            width: 380px;
+            max-width: 100%;
+            max-height: 100%;
+            font-size: 12px;
+            position: relative;
+        }
+        @media(max-width: 500px){
+            padding: 30px 0px;
+        }
+    }
+    &__shadow{
+        width: 200px;
+        height: 369px;
+        background-color: $grey-dark;
+        position: relative;
+        left: 35px;
+        bottom: -6px;
+        @media(max-width: $tablet){
+            height: 298px;
+            left: 11px;
+        }
+    }
+}
+.titleleft{
+    text-align: left;
+}
+.certificate-triangle-mobile{
+    display: none;
+    @media(max-width: 500px){
+        display: block;
+        border: 165px solid transparent;
+        border-bottom: 141px solid #9DDEE2;
+        border-left: 177px solid #9DDEE2;
+    }
+}

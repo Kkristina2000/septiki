@@ -1,0 +1,30 @@
+.contacts-section {
+  padding: 100px 0px;
+  height: auto;
+}
+.contacts-section__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
+}
+.contacts-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  width: 360px;
+}
+.contacts-section__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.contacts-section__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #272A31;
+}/*# sourceMappingURL=contacts.css.map */

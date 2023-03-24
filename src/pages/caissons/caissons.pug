@@ -1,0 +1,78 @@
+-var photoCaissons = 'src/images/caissons/caissons.jpg';
+-var photoCaisson = 'src/images/caissons/caisson.jpg';
+-var questions = [{name: 'Что из себя представляет кессон для скважин?', text: 'Кессон представляет собой полимерный герметичный колодец, который используется для обустройства скважины.'},{name: 'От чего кессон защищает скважину?', text: 'Конструкция защищает скважину от перепадов температур, промерзания и попадания в нее поверхностных вод.'},{name: 'Каковы преимущества наших кессонов для скважин?', text: 'Мощный корпус, 100% герметизация обсадной трубы, не требуют дополнительной теплоизоляции, простота монтажа и эксплуатации.'},{name: 'Насколько долгим может быть срок эксплуатации кессона для скважин?', text: 'Если монтаж сделан правильно, кессон прослужит долгие годы. Срок службы пластиковых кессонов для скважины – 50 лет.'}];
+-var caissons = [{model: 'KANN KS 800/1800', size: '800 внутр., 840 наружн.', height: '1 700', cost: '990'},{model: 'KANN KS 1000/1800', size: '1 000 внутр., 1 050 наружн.', height: '1 700', cost: '1 490'},{model: 'KANN KS 1200/1800', size: '1 200 внутр., 1 250 наружн.', height: '1 800', cost: '1 790'},{model: 'KANN KS 1400/1800', size: '1 400 внутр., 1 460 наружн.', height: '1 800', cost: '2 190'}];
+- var advantagesCaissons = [{text:'оплата по факту выполненных работ', icon: "src/images/icons/money.png"},{text:'гарантия на монтаж 3 года', icon: "src/images/icons/guarantee.png"},{text:'монтажники с опытом работы 5+ лет', icon: "src/images/icons/employees.png"},{text:'бесплатный выезд на замер', icon: "src/images/icons/departure.png"}];
+
+include ../../common/table/table.pug
+include ../../common/comments/comments.pug
+include ../../common/main/main.pug
+include ../../common/questions/questions.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Кессоны для скважин
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+        script(async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous")
+        link(rel="stylesheet" href="src/scss/styles.css")
+    body
+        div.wrapper
+            include ../../common/header/header.pug
+            main.main
+                +main('Кессоны для скважин', 'Закажите кессон + монтаж + обвязку и получите скидку 20% на все работы! ', photoCaissons, advantagesCaissons)
+                section.caissons-section
+                    div.station-section__container._container
+                        h1.caissons-section__title.title Кессоны для скважин
+                        div.station-section__container
+                            div.station-section__body
+                                div.station-section__left
+                                    h3.station-section__title.station-title-mobile KANN серии  KN
+                                    div.station-section__photos.station-mobile
+                                        img.station__top-photo.border(src=photoCaisson).gallery__item
+                                        div.station__bottom-photo
+                                            img.border.gallery__item(src='src/images/caissons/card-caisson-1.jpg' alt="Фото")
+                                            img.border.gallery__item(src='src/images/caissons/card-caisson-2.jpg' alt="Фото")
+                                            img.border.gallery__item(src='src/images/caissons/card-caisson-3.jpg' alt="Фото")
+                                    div.station-section__content
+                                        h3.station-section__title=title
+                                        div.station-section__description
+                                            p.text Кессон – водонепроницаемая ёмкость с 100% герметичностью. Монтируется на скважину, кессон надевается на трубу и обеспечивает герметичный стык с обсадной трубой при помощи муфты. <br>Основная цель кессона – защитить поступающую воду от загрязнения её грунтовыми и поверхностными водами. Дополнительная функция - защита электропитания для скважинного насоса. <br>Все модели изготовлены из спиральновитой трубы. Корпус имеет толщину 25 мм и выполнен из первичного полиэтилена марки ПЭ100. Материал корпуса устойчив к низким и высоким температурам, что позволяет использовать его в любых погодных условиях. <br>Площадь дна на 35% больше его корпуса, это обеспечивает дополнительную фиксацию в грунте. Масса наружного грунта давит на дно кессона обеспечивая большую прижимную силу.<br>100% герметизация обсадной трубы осуществляется при помощи двух способов соединения: польской резиновой муфты диаметром 90-133 мм или российской термоусадочной муфты диаметром 50-160 мм
+                                    div.station-section__table
+                                        +table-caisson(caissons)
+                                        div.station-section__buttons.buttons
+                                            a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                                            a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 3 439 439
+                                div.station-section__photos
+                                    img.station__top-photo.border(src=photoCaisson).gallery__item
+                                    div.station__bottom-photo
+                                        img.border.gallery__item(src='src/images/caissons/card-caisson-1.jpg' alt="Фото")
+                                        img.border.gallery__item(src='src/images/caissons/card-caisson-2.jpg' alt="Фото")
+                                        img.border.gallery__item(src='src/images/caissons/card-caisson-3.jpg' alt="Фото")
+                                div.station-section__table.table-tablet
+                                    +table-caisson(caissons)
+                                    div.station-section__buttons.buttons
+                                        a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                                        a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 3 439 439
+                include ../../common/order/order.pug
+                div.caissons-block._container
+                    .caissons-photos 
+                        img(src="src/images/caissons/caisson1.jpg", alt="Фото")
+                        img(src="src/images/caissons/caisson2.jpg", alt="Фото")
+                        img(src="src/images/caissons/caisson3.jpg", alt="Фото")
+                        img(src="src/images/caissons/caisson4.jpg", alt="Фото")
+                        img(src="src/images/caissons/caisson5.jpg", alt="Фото")
+                        img(src="src/images/caissons/caisson6.jpg", alt="Фото")
+                    div.caissons-block__buttons.buttons
+                        a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                        a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 3 439 439
+                include ../../common/certificate/certificate.pug
+                +questions(questions)
+                include ../../common/partners/partners.pug
+            include ../../common/footer/footer.pug
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+        script(src="src/js/burger.js")
+        script(src="src/js/photo.js")    

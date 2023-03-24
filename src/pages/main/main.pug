@@ -1,0 +1,52 @@
+-var services = [{name: 'Автономные канализации', description: 'Осуществляем профессиональную установку автономных канализаций лидера по производству очистных сооружений ООО “КАНН ПРОЕКТ” по ценам производителя. В наличии широкий ассортимент станций биологической очистки серии KANN: ULTRA, ECO, V и BIO. В услугу входит бесплатный замер и доставка, монтаж и установка в оговоренные сроки.', page: 'septiki.html', image: 'src/images/septiki/septiki.jpg'},{name: 'Кессоны для скважин', description: 'Предлагаем своим клиентам кессоны для скважин. Основная цель кессона - защитить поступающую воду от загрязнения её грунтовыми и поверхностными водами. Дополнительная - защита электропитания для скважинного насоса. Материал корпуса устойчив к низким и высоким температурам, что позволяет использовать его в любых погодных условиях.', page: 'caissons.html', image: 'src/images/caissons/caissons.jpg'},{name: 'Септики из бетонных колец', description: 'Септик из бетонных колец, по сравнению с выгребной ямой и пластиковыми дренажными емкостями, является самым оптимальным решением для обустройства системы отвода стоков. Он позволяет эффективно переработать отходы, предотвращая какое-либо загрязнение грунтов. В септике из колец нечистоты разлагаются гораздо быстрее, а наличие 2-х или 3-х камерной конструкции отстаивания еще больше повышает экологичность такой очистки.', page: 'rings.html', image: 'src/images/rings/rings.jpg'},{name: 'Аренда мини-экскаватора', description: 'Мини-экскаваторы JCB 8015 и Wacker Neuson доступны для аренды под соответствующие хозяйственные нужды. Мы гаранитируем проверенную и подготовленную технику, профессионального и опытного экскаваторщика, своевременную доставку экскаватора, оперативное решение задач и поддержку.', page: 'excavator.html', image: 'src/images/excavator/excavator.jpg'}];
+
+-var advantages = [{amount:'10+', text: 'лет на рынкe'},{amount: '7 00+', text: 'проектов'},{amount: '5 70+', text: 'клиентов'}];
+-var photosCompany = ['src/images/company/img1.jpg','src/images/company/img2.jpg','src/images/company/img3.jpg','src/images/company/img4.jpg','src/images/company/img5.jpg','src/images/company/img6.jpg'];
+
+include ../../common/main/main.pug
+include ../../common/advantage-company/advantage-company.pug
+include ../../common/service/service.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Главная
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+        link(rel="stylesheet" href="src/scss/styles.css")
+    body
+        div.wrapper
+            include ../../common/header/header.pug
+            main
+                div._container
+                    div.swiper-button-prev
+                    div.swiper-button-next
+                    include ../../common/main-slider/main-slider.pug
+                .advantage-company-block
+                    .advantage-company-block__container._container
+                        each advantage in advantages
+                            +advantage-company(advantage)
+                section.services-section 
+                    div.services-section__container._container 
+                        h1.services-section__title.title Наши услуги
+                        div.services-section__body
+                            each service in services 
+                                +service(service)
+                        div.services-section__buttons
+                            a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                            a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 3 439 439
+                section.company-section
+                    .company-section__container._container
+                        h1.company-section__title.title О компании
+                        div.company-section__body
+                            div.company-section__description
+                               p Наша компания - официальный представитель лидера по производству очистных сооружений ООО “КАНН ПРОЕКТ”. Реализуем продукцию по ценам производителя.<br><br>Являемся профессиональными подрядчиками по монтажу, ремонту и техническому обслуживанию автономных канализаций. У нас работают опытные инженеры и специалисты по установке. В качестве дополнительной услуги предлагаем в аренду наши миниэкскаваторы.
+                            for photo in photosCompany 
+                                img(src=photo alt="")
+                        a(href='contacts.html').company-section__link.link Подробнее
+                include ../../common/partners/partners.pug
+            include ../../common/footer/footer.pug
+    script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+    script(src="src/js/script.js")
+    script(src="src/js/burger.js")

@@ -1,0 +1,107 @@
+-var photoExcavator = 'src/images/excavator/excavator.jpg';
+-var questions = [{name: 'На какой минимальный срок можно арендовать технику?', text: 'Минимальный период заказа - 4 часа.'},{name: 'Какой режим работы арендуемой техники?', text: 'Мы работаем в выходные, в том числе, круглосуточно.'},{name: 'Какова стоимость аренды мини-экскаватора?', text: 'За час: 50-60 руб., за смену: от 400 руб. + доставка.'},{name: 'Для каких работ предназначена аренда наших мини-экскаваторов?', text: 'Рытье траншей под фундамент, воду, газ, канализацию, телефон, забор и другие коммуникации. Копание котлованов и прудов глубиной до 3 м. Ландшафтные работы метровым ковшом.'}]
+- var advantagesExcavator = [{text:'проверенная и подготовленная техника', icon: "src/images/icons/technique.png"},{text:'профессиональный и опытный экскаваторщик', icon: "src/images/icons/excavator.png"},{text:'своевременная доставка экскаватора', icon: "src/images/icons/time.png"},{text:'оперативное решение задач и поддержка', icon: "src/images/icons/help.png"}];
+-var excavator1 = 'src/images/excavator/ex1.jpg';
+-var excavator2 = 'src/images/excavator/ex2.jpg';
+-var stagesExcavator = [{point: '01', stage: 'Заявка', text: 'Оставляете заявку на консультацию через телефонный звонок или сообщение в Telegram.'},{point: '02', stage: 'Бронь', text: 'Согласовываем место, время и сроки эксплуатации мини-экскаватора.'},{point: '03', stage: 'Договор', text: 'Договариваемся о всех условиях сотрудничества и сроках монтажа, заключаем договор.'},{point: '04', stage: 'Аренда', text: 'В срок доставляем технику. Выполняете необходимые работы.'}]
+
+include ../../common/main/main.pug
+include ../../common/comments/comments.pug
+include ../../common/questions/questions.pug
+<!DOCTYPE html>
+<html lang="en">
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Аренда мини-экскаваторов
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+    link(rel="stylesheet" href="src/scss/styles.css")
+<body>
+    div.wrapper
+        include ../../common/header/header.pug
+        main.main
+            +main('Аренда мини-экскаваторов!', 'Цена за час: 50-60 BYN Цена за смену: от 400 BY + доставка Минимальный заказ: 4 часа', photoExcavator, advantagesExcavator)
+            h1.excavator-section__title.title наши мини-экскаваторы
+            section.excavator-section
+                div.excavator-section__container._container
+                    div.excavators
+                        div.excavator                    
+                            div.excavator-block__top
+                                div.excavator_image
+                                    h2.caisson-block__name.excavator-title-adapt JCB 8015
+                                    img.excavator-block__image(src=excavator1, alt="экскаватор JCB 8015")
+                                div.excavator-block__content
+                                    h2.caisson-block__name.excavator-title JCB 8015
+                                    div.excavator-block__text.excavator-text Мини-экскаватор JCB 8015 на гусеничном ходу может выкопать траншею глубиной до 2,5 метров. Высота подъема ковша также 2,5 м. Это один из самых малогабаритных представителей экскаваторной техники, которая выпускается известной британской компанией.<br><br>В наличии ковши 30, 40, 50, 60 и 1 м. Ландшафтные работы метровым ковшом. Гибкая система скидок. Маленькие размеры и максимальная производительность в своем классе. Работаем в выходные.
+                            table       
+                                tbody
+                                    tr 
+                                        td.excavator-characteristic Двигатель
+                                        td.excavator-value JCB 103-10
+                                    tr 
+                                        td.excavator-characteristic Эксплуатационная мощность 
+                                        td.excavator-value 12,7 кВТ
+                                    tr 
+                                        td.excavator-characteristic Скорость транспортная
+                                        td.excavator-value 2,1 км/ч
+                                    tr 
+                                        td.excavator-characteristic Глубина копания
+                                        td.excavator-value 2 500 мм
+                                    tr 
+                                        td.excavator-characteristic Макс. объём ковша
+                                        td.excavator-value 0,047 м3
+                            div.excavator-block__buttons.buttons
+                                a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                                a(href="tel:+375293439439" class='button').buttons__phone.button +375 29 3 439 439
+                        div.excavator                    
+                            div.excavator-block__top.bottom
+                                div.excavator-block__content
+                                    h2.caisson-block__name.excavator-title._right WACKER NEUSON
+                                    div.excavator-block__text.excavator-text Экскаватор 1404 производства немецкого концерна Wacker Neuson SE является одним из самых маленьких мини-экскаваторов с закрытой кабиной в мире, поэтому в его названии часто фигурирует приставка "микро" или "нано". Высота по кабину всего 2285 мм, масса вместе с оператором и топливом 1600 кг, ширина 990 мм. Благодаря таким характеристикам этот мини-экскаватор легко может заезжать в дверной проем (высотой не менее 2.3 м).
+                                div.excavator_image
+                                    h2.caisson-block__name.excavator-title-adapt WACKER NEUSON
+                                    img.excavator-block__image(src=excavator2, alt="экскаватор JCB 8015")
+                            table       
+                                tbody
+                                    tr 
+                                        td.excavator-characteristic Двигатель
+                                        td.excavator-value JCB 103-10
+                                    tr 
+                                        td.excavator-characteristic Эксплуатационная мощность 
+                                        td.excavator-value 12,7 кВТ
+                                    tr 
+                                        td.excavator-characteristic Скорость транспортная
+                                        td.excavator-value 2,1 км/ч
+                                    tr 
+                                        td.excavator-characteristic Глубина копания
+                                        td.excavator-value 2 500 мм
+                                    tr 
+                                        td.excavator-characteristic Макс. объём ковша
+                                        td.excavator-value 0,047 м3
+                            div.excavator-block__buttons.buttons
+                                a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                                a(href="tel:+375293439439" class='button').buttons__phone.button +375 29 3 439 439
+            section.order-section
+                div.order-section__container._container
+                    h2.order-section__title.title Как заказать?
+                    div.order-section__stages
+                        for i in stagesExcavator
+                            div.stages__item.item 
+                                div.item__point=i.point
+                                h3.item__stage=i.stage
+                                div.item__text=i.text
+            div.excavator-photos._container
+                div.excavator-block-photos
+                    img(src='src/images/excavator/excavator1.jpg')
+                    img(src='src/images/excavator/excavator2.jpg')
+                    img(src='src/images/excavator/excavator3.jpg')
+                div.excavator-block__buttons.buttons
+                    a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                    a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 3 439 439
+            +questions(questions)
+            include ../../common/partners/partners.pug
+            include ../../common/footer/footer.pug
+    script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+    script(src="src/js/comments.js")
+    script(src="src/js/burger.js")

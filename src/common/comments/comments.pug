@@ -1,0 +1,19 @@
+mixin comment(text, account)
+    p.comment__text=text
+    span.comment__account=account
+
+mixin comments(comments)
+    section.comment-section._container
+        div.comment-section__container
+            h1.comment-section__title.title Отзывы
+            div.comment-section__comments.comments 
+                div.swiper._container 
+                    div.swiper-wrapper
+                        each comment in comments
+                            div.swiper-slide.comment__item
+                                +comment(comment.text, comment.account)
+                div.swiper-pagination
+                div.swiper-scrollbar
+            div.comment-section__buttons.buttons
+                a(href='#' class='button').buttons__telegram.button Спросить в Telegram
+                a(href='tel:+375 29 343 94 39' class='button').buttons__phone.button +375 29 3 439 439

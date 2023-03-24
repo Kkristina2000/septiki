@@ -1,0 +1,186 @@
+.main-section{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        @media(max-width: 600px){
+            gap: 70px;
+        }
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        gap: 48px;
+        margin-top: 80px;
+        
+        @media(max-width: $tablet){
+            margin-top: 0px;
+            align-items: center;
+        }
+        @media(max-width: $mobile){
+            margin-top: 0px;
+            gap: 1px;
+        }
+    }
+    &__advantages{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 50px;
+        margin-top: 172px;
+        
+        @media(max-width: $tablet){
+            justify-content: space-around;
+            margin-top: 90px;
+        }
+        @media(max-width: 600px){
+            margin: 40px 0px;
+        }
+    }
+}
+.main-block{
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 37px;
+        width: 47%;
+        @media(max-width: $tablet){
+            gap: 20px;
+        }
+
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+
+        @media(max-width: $tablet){
+            font-size: 25px;
+            line-height: 30px;
+        }
+    
+        @media(max-width: 444px){
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 25px;
+
+        @media(max-width: $tablet){
+            font-size: 15px;
+        }
+        
+        @media(max-width: 444px){
+            font-size: 12px;
+            line-height: 20px;
+            width: 130px;
+        }
+    }
+    &__buttons{
+        margin-top: 80px;
+        display: flex;
+        gap: 20px;
+        @media(max-width: 900px){
+            margin-top: 0px;
+        }
+        @media(max-width: $tablet){
+            margin-top: 20px;
+        }
+        @media(max-width: 600px){
+            display: none;
+        }
+    }
+    &__media{
+        position: relative;
+    }
+}
+
+.media{
+    position: relative;
+    &__triangle{
+        position: absolute;
+        top: -30px;
+        left: -46px;
+        width: 100%;
+        object-fit: cover;
+        
+        @media(max-width: $tablet){
+            left: -30px;
+            right: 0px;
+            top: -11px;
+        }
+        @media(max-width: $mobile){
+            left: -14px;
+            right: 0px;
+            top: -12px;
+        }
+    }
+
+    &__rectangle{
+        position: relative;
+        top: 257px;
+        left: 150px;
+        background-color: $grey-dark;
+        width: 540px;
+        height: 360px;
+        @media(max-width: $tablet){
+            width: 270px;
+            height: 180px;
+            left: -26px;
+            top: 145px;
+        }
+        @media(max-width: $mobile){
+            width: 180px;
+            height: 120px;
+            top: 75px;
+
+        }
+    }
+    &__image{
+       max-width: 500px;
+       max-height: 465px;
+    //    width: 100%;
+    //    height: 100%;
+       @media(max-width: $tablet){
+            // max-height: 230px;
+            // max-width: 330px;
+        }
+        @media(max-width: $mobile){
+            max-height: 155px;
+            max-width: 200px;
+        }
+    }
+    &__photo{
+        position: relative;
+        right: 0px;
+        // max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top:0px;
+        @media(max-width: $tablet){
+            left: 0px;
+            top: 0px;
+        }
+        @media(max-width: $mobile){
+            line-height: 20px;
+            right: 85px;
+            top: -1px;
+        }
+    }
+}
+.buttons-main-adapt{
+    display: none;
+    @media(max-width: 600px){
+        display: flex;
+        margin: 0px auto;
+    }
+    @media(max-width: $mobile){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

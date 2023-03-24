@@ -1,0 +1,292 @@
+.station-section{    
+    padding: 70px 0px;
+    @media(max-width: $tablet){
+        padding: 40px 0px;
+    }
+    @media(max-width: $mobile){
+        padding: 20px 0px;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        width: 100%;
+        @media(max-width: $mobile){
+            gap: 30px;
+        }
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        position: relative;
+        width: 100%;
+        @media(max-width: $tablet){
+            flex-direction: column;
+        }
+    }
+    
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 40px;
+        width: 70%;
+        @media(max-width: $tablet){
+            width: 50%;
+        }
+       @media(max-width: 600px){
+            row-gap: 15px;
+            width: 100%;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 280px;
+        @media(max-width: 600px){
+            min-height: auto;
+        }
+    }
+    &__title{
+        text-align: right;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 50px;
+        text-transform: uppercase;
+        @media(max-width: 600px){
+            display: none;
+        }
+    }
+    &__description{
+        display: flex;
+        justify-content: end;
+        background-color: $grey;
+        padding: 14px 5px 9px 15px;
+        width: 100%;
+        @media(max-width: $tablet){
+            min-height: 380px;
+        }
+        @media(max-width: 600px){
+            min-height: auto;
+        }
+        .text{
+            @media(max-width: 600px){
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+    &__table{
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        @media(max-width: $tablet){
+            display: none;
+        }
+    }
+    &__top{
+        display: none;
+    }
+    &__buttons{
+        display: flex;
+        justify-content:center;
+    }
+    &__photos{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        max-width: 480px;
+        >img{
+            width: 100%;
+        }
+
+        @media(max-width: $tablet){
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            row-gap: 20px;
+            max-width: 45%;
+            max-height: 930px;
+             div{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                row-gap: 10px;
+            }
+        }
+        @media(max-width: 600px){
+           position: static;
+           margin: 0px auto;
+           display: none;
+           max-width: 100%;
+        }
+        @media(max-width: $mobile){
+            row-gap: 10px;
+        }
+    }
+}
+.station{
+    &__bottom-photo{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        max-width: 560px;
+        >img{
+            width: 30%;
+            object-fit: cover;
+            // transition: 1s;
+            // &:hover{
+            //     transform: scale(3); /* Увеличиваем масштаб */
+            // }
+    }
+}
+}
+.text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    @media(max-width: $mobile){
+        font-size: 12px; 
+    }
+}
+.table-tablet{
+    display: none;
+    @media(max-width: $tablet){
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+}
+.station-section:nth-child(odd) .station-section__body{
+    flex-direction: row-reverse;
+    @media(max-width: $tablet){
+        flex-direction: column;
+        align-items: end;
+    }
+}
+.station-section:nth-child(odd) .station-section__content{
+    align-items: start;
+}
+.station-section:nth-child(odd) .station-section__photos{
+    @media(max-width: $tablet){
+        left: 0px;
+    }
+}
+.station-section:nth-child(odd) .station-section__description{
+    justify-content: start;
+}
+.station-section:nth-child(even) .station-section__description{
+    justify-content: end;
+}
+.station-mobile{
+    display: none;
+   @media(max-width: 600px){
+        display: flex;
+        text-align: start;
+    }
+
+}
+.station-title-mobile{
+    display: none;
+    @media(max-width: 600px){
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 50px;
+
+    }
+    @media(max-width: $mobile){
+        font-size: 16px;
+        line-height: 50px;
+    }
+    
+}
+/* Style the Image Used to Trigger the Modal */
+/*Image modal*/
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin-top: 40px;
+    animation: zoom 0.3s ease-in-out;
+    @media(max-width: $mobile){
+        margin-top: 15px;
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.modal img {
+    width: 40%;
+    object-fit: cover;
+    @media(max-width: $tablet){
+        width: 70%;
+    }
+    @media(max-width: $mobile){
+        width: 80%;
+    }
+}
+.closeBtn {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 25px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.closeBtn:hover {
+    color: rgb(255, 255, 255);
+}
+
+.gallery__item {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery__item{
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery__item:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 950px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

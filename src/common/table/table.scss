@@ -1,0 +1,81 @@
+table{
+    width: 480px;
+    margin: 0px auto;
+    padding: 0px 10px;
+    th{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        padding: 0px 0px 9px;
+        @media(max-width: $tablet){
+            font-size: 9px;
+       }
+    }
+    tr{
+        border-bottom: 1px solid $turquoise-light;
+    }
+    td{
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 30px;
+        opacity: 0.8;
+        @media(max-width: $tablet){
+            font-size: 9px;
+       }
+        @media(max-width: $mobile){
+            font-size: 8px;
+       }
+    }
+    @media(max-width: $tablet){
+        position: relative;
+        div{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+           row-gap: 10px;
+           >img{
+               width: 75px;
+           }
+       }
+   }
+   @media(max-width: 500px){
+    width: 100%;
+}
+   @media(max-width: $mobile){
+        width: 100%;
+}
+}
+.model{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    @media(max-width: $tablet){
+        font-size: 9px;
+   }
+    @media(max-width: $mobile){
+        font-size: 8px;
+   }
+}
+.coast{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    @media(max-width: $tablet){
+        font-size: 9px;
+   }
+    @media(max-width: $mobile){
+        font-size: 8px;
+   }
+}
+.table-caisson{
+    width: 700px;
+    @media(max-width: $tablet){
+        width: 100%;
+   }
+}
+.size{
+    text-align: center;
+}

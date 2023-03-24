@@ -1,0 +1,18 @@
+mixin septik(septik)
+    article.septik-card
+        div.septik-card__container
+            h2.septik-card__title=septik.title
+            img.septik-card__image.border(src=septik.image, alt='')
+            table.septik-card__table.table
+                tr
+                    td.characteristic Комплект
+                    td.value=septik.set
+                tr
+                    td.characteristic Объем септика
+                    td.value=septik.volume
+                tr
+                    td.characteristic Расчет
+                    td.value=septik.account
+                tr
+                    td.characteristic Стоимость
+                    td.value.price=septik.price

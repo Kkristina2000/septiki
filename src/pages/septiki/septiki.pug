@@ -1,0 +1,52 @@
+-var photoSeptiki = 'src/images/septiki/septiki.jpg'
+-var questions = [{name: 'Что собой представляют станции биологической очистки?', text: 'Станции биологической очистки (СБО) KANN® представляют собой системы, используемые для очистки сточных вод от органических и неорганических загрязнений, путем использования биологических процессов.'},{name: 'В чём заключается принцип работы СБО?', text: 'Принцип работы СБО заключается в том, что сточные воды проходят через различные отсеки, где они подвергаются биологической обработке с помощью бактерий, которые расщепляют органические загрязнения и переводят их в более простые соединения.'},{name: 'Насколько высоким может быть уровень очистки благодаря нашим СБО?', text: 'Современный септик позволяет очистить канализационные стоки до уровня технической прозрачности воды без запаха (очистка до 98%).'},{name: 'Насколько долгим может быть срок эксплуатации автономной канализации?', text: 'Срок службы автономной канализации KANN® – не менее 50 лет.'}];
+
+- var advantagesSeptiki = [{text:'оплата по факту выполненных работ', icon: "src/images/icons/money.png"},{text:'гарантия на монтаж 3 года', icon: "src/images/icons/guarantee.png"},{text:'монтажники с опытом работы 5+ лет', icon: "src/images/icons/employees.png"},{text:'бесплатный выезд на замер', icon: "src/images/icons/departure.png"}];
+include ../../common/main/main.pug
+include ../../common/questions/questions.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Автономная канализация
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+        script(async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous")
+        link(rel="stylesheet" href="src/scss/styles.css")
+    body
+        div.wrapper
+            include ../../common/header/header.pug
+            main.main
+                +main('Автономная канализация KANN', 'Замер и доставка в подарок,оплата по факту(без предоплат)!', photoSeptiki, advantagesSeptiki)
+                section.stations-section
+                    div.stations-section__container._container
+                        h1.stations-section__title.title Cтанции биологической очистки
+                        include ../../common/station/station.pug
+                include ../../common/order/order.pug
+                div.photos__container._container
+                    div.installation-block
+                        img(src='src/images/septiki/installation/installation1.jpg')
+                        img(src='src/images/septiki/installation/installation2.jpg')
+                        img(src='src/images/septiki/installation/installation3.jpg')
+                        img(src='src/images/septiki/installation/installation4.jpg')
+                        img(src='src/images/septiki/installation/installation5.jpg')
+                        img(src='src/images/septiki/installation/installation6.jpg')
+                        img(src='src/images/septiki/installation/installation7.jpg')
+                        img(src='src/images/septiki/installation/installation8.jpg')
+                        img(src='src/images/septiki/installation/installation9.jpg')
+                        img(src='src/images/septiki/installation/installation10.jpg')
+                        img(src='src/images/septiki/installation/installation11.jpg')
+                        img(src='src/images/septiki/installation/installation12.jpg')
+                    div.installation-block__buttons.buttons
+                        a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                        a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 3 439 439
+                include ../../common/certificate/certificate.pug
+                +questions(questions)
+                include ../../common/partners/partners.pug
+            include ../../common/footer/footer.pug
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+        script(src="src/js/comments.js")
+        script(src="src/js/burger.js")
+        script(src="src/js/photo.js")

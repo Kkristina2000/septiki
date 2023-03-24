@@ -1,0 +1,180 @@
+.header{
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    padding: 5px 0px;
+    background-color: $white;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        @media(max-width: $tablet){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__logo{
+        height: 70px;
+        z-index: 5;
+        img{
+            // width: 100%;
+            height: 100%;
+        }
+        @media(max-width: $mobile){
+            height: 50px;
+        }
+    }
+
+    &__burger{
+        display: none;
+        @media(max-width: $tablet){
+            z-index: 5;
+            height: 16px;
+            display: block;
+            position: relative;
+            width: 30px;
+            cursor: pointer;
+            span,&::before, &::after{
+                left: 0px;
+                width: 100%;
+                height: 10%;
+                position: absolute;
+                transition: all 0.3s ease 0s;
+                background-color: $black;
+            }
+            &::before,&::after{
+                content: "";
+            }
+            &::before{
+                bottom: 0;
+
+            }
+            span{
+                top: 50%;
+                transform: scale(1) translate(0px, -50%);
+            }
+        
+        }
+        @media(max-width: 500px){
+            height: 16px;
+            // display: block;
+            // position: relative;
+            width: 30px;
+            cursor: pointer;
+            span,&::before, &::after{
+                left: 0px;
+                width: 100%;
+                height: 10%;
+                position: absolute;
+                transition: all 0.3s ease 0s;
+                background-color: $black;
+            }
+            &::before,&::after{
+                content: "";
+            }
+            &::before{
+                bottom: 0;
+
+            }
+            span{
+                top: 50%;
+                transform: scale(1) translate(0px, -50%);
+            }
+        
+        }
+    }
+    &__menu{
+        flex: 0 1 795px;
+        @media(max-width: $tablet){
+            color: $white;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 110px 30px 30px 50px;
+            transition: left 0.3s ease 0s;
+            &::before{
+                content: "";
+                position: fixed;
+                width: 100%;
+                top:0;
+                left:0;
+                height: 80px;
+                background-color: $white;
+                z-index: 2;
+            }
+        }
+        @media(max-width: $mobile){
+            &::before{
+                height: 60px;
+                background-color: $white;
+                z-index: 2;
+            }
+        }
+    }
+    &__phone{
+        color: $turquoise-dark;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        z-index: 5;
+    }
+}
+.menu{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        @media(max-width: $tablet){
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        @media(max-width: $tablet){
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+    }
+    &__link{
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: $black;
+        &:focus{
+            color: $turquoise-dark;
+        }
+        @media(max-width: $tablet){
+            color: $white;
+            font-size: 24px;
+        }
+        @media(max-width: $mobile){
+            font-size: 18px;
+        }
+    }
+}
+._active{
+    left: 0;
+}
+
+
+.header__burger._active::before{
+    top: 45%;
+    transform: rotate(-45deg) translate(0px, -50%);
+}
+._active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, -50%);
+}
+
+._active span{
+    transform: scale(0) translate(0px, -50%);
+}

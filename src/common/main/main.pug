@@ -1,0 +1,22 @@
+include ../advantages/advantages.pug
+
+mixin main(title, text, photo, advantages)
+    section.main-section
+        div.main-section__container._container
+            div.main-section__top.main-block
+                div.main-block__content
+                    h1.main-block__title=title
+                    div.main-block__text=text
+                    div.main-block__buttons
+                        a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                        a(href="tel:+375293439439" class='button').buttons__phone.button +375 29 3 439 439
+                div.main-block__media.media
+                    img(src="src/images/triangle.svg").media__triangle
+                    div.media__image
+                        img(src=photo).media__photo.border
+            div.main-block__buttons.buttons-main-adapt
+                        a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                        a(href="tel:+375293439439" class='button').buttons__phone.button +375 29 3 439 439
+            div.main-section__advantages
+                for advantage in advantages
+                    +advantages(advantage)

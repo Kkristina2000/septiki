@@ -1,0 +1,86 @@
+.order-section{
+    margin: 90px 0px;
+    @media(max-width: $tablet){
+        margin: 80px 0px;
+    }
+    @media(max-width: $mobile){
+        margin: 50px 0px;
+    }
+    &__container{
+        width: 100%;
+    }
+    &__title{
+        @media(max-width: $mobile){
+            margin-bottom: 30px;
+        }
+    }
+   &__stages{
+    max-width: 990px;
+    margin: 0px auto;
+    @media(max-width: $tablet){
+        width: 100%;
+    }
+
+    @media(max-width: $mobile){
+        width: 100%;
+    }
+}
+   }
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+    border-bottom: 2px solid $turquoise-light;
+    padding: 50px 0px 25px;
+    @media(max-width: $tablet){
+        gap: 30px;
+        padding: 30px 0px 25px;
+    }
+    @media(max-width: $mobile){
+        flex-wrap: wrap;
+        border-top: 2px solid $turquoise-light;
+        border-bottom: 0px solid;
+        padding: 15px 0px;
+    }
+
+    @media(max-width: $mobile){
+        gap: 10px;
+    }
+
+    &__point{
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: $grey-light;
+        @media(max-width: $tablet){
+            font-size: 25px;
+        }
+    }
+    &__stage{
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 50px;
+        text-transform: capitalize;
+        width: 200px;
+        @media(max-width: $tablet){
+            font-size: 25px;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        width: 450px;
+        @media(max-width: $tablet){
+            width: 330px;
+        }
+    
+        @media(max-width: $mobile){
+            width: 100%;
+        }
+    }
+}

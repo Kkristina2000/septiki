@@ -1,0 +1,51 @@
+.comment-section{
+    padding-bottom: 150px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &__buttons{
+        margin-top: 40px;
+    }
+    .swiper-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+    .swiper-slide{
+        min-height: 300px;
+        max-width: 270px;
+    @media(max-width: $mobile){
+        min-height: 221px;
+        width: 220px;
+
+    }
+}
+
+}
+
+.comment{
+    &__item{
+        background-color: $turquoise-light;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+    &__account{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        float: right;
+    }
+}

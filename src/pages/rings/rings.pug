@@ -1,0 +1,52 @@
+-var photoRings = 'src/images/rings/rings.jpg';
+-var questions = [{name: ' В чём преимущества септиков из ж/б колец?', text: 'Доступная цена, длительный срок эксплуатации, надёжность.'},{name: 'На каком расстоянии от дома необходимо размещать септики из ж/б колец?', text: 'Оптимальная схема размещения септика из бетонных колец – 7-8 метров от дома. '},{name: 'От чего зависит объём септика из ж/б колец?', text: 'Количество отсеков, а, соответственно, и объем септика напрямую зависит от количества человек, проживающих в доме и наличия сантехнического и бытового оборудования.'},{name: 'Насколько долгим может быть срок эксплуатации септика из ж/б колец?', text: 'Бетон по характеристикам мало чем уступает природному камню, поэтому конструкции из него гарантированно прослужат от 50 лет и выше.'}];
+-var path = 'src/images/rings/septiki/';
+-var septiki = [{title: '2+2 (два колодца)', image: `${path}2+2.jpg`, set: '4 кольца + 2 люка', volume: '7 м3', account: '3-4 человека', price: 'по запросу'},{title: '2+2+2 (три колодца)', image: `${path}2+2+2.jpg`, set: '6 колец+ 2 люка', volume: '12,5 м3', account: '6-7 человек', price: 'по запросу'},{title: '2+3 (два колодца)', image: `${path}2+3.jpg`,set: '5 колец+ 2 люка', volume: '8,5 м3', account: '4-5 человек', price: 'по запросу'},{title: '2+3+3 (три колодца)', image: `${path}2+3+3.jpg`, set: '8 колец+ 3 люка', volume: '16 м3', account: '12 человек', price: 'по запросу'},{title: '3+3+3 (три колодца)', image: `${path}3+3+3.jpg`, set: '9 колец+ 3 люка', volume: '15 м3', account: '11-12 человек', price: 'по запросу'}, {title: '3+3 (два колодца)', image: `${path}3+3.jpg`, set: '6 колец+ 2 люка', volume: '10 м3', account: '5-6 человек', price: 'по запросу'},];
+- var advantagesRings = [{text:'оплата по факту выполненных работ', icon: "src/images/icons/money.png"},{text:'гарантия на монтаж 3 года', icon: "src/images/icons/guarantee.png"},{text:'монтажники с опытом работы 5+ лет', icon: "src/images/icons/employees.png"},{text:'бесплатный выезд на замер', icon: "src/images/icons/departure.png"}];
+include ../../common/main/main.pug
+include ../../common/comments/comments.pug
+include ../../common/septik-card/septik-card.pug
+include ../../common/questions/questions.pug
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Септики из бетонных колец</title>
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+    link(rel="stylesheet" href="src/scss/styles.css")
+</head>
+<body>
+    div.wrapper
+        include ../../common/header/header.pug
+        main.main
+            +main('Септики из бетонных колец', 'Выполним работы по монтажу жб септика в самые короткие сроки!', photoRings, advantagesRings)
+            section.rings-section._container
+                div.rings-section__container
+                    h1.rings-section__title.title Варианты септиков из колец
+                    div.rings-section__septiki
+                        each septik in septiki 
+                            +septik(septik)
+                    div.rings-section__buttons.buttons
+                        a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                        a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
+            include ../../common/order/order.pug
+            div.rings-block__container._container
+                div.rings-block
+                    img(src='src/images/rings/rings1.jpg')
+                    img(src='src/images/rings/rings2.jpg')
+                    img(src='src/images/rings/rings3.jpg')
+                    img(src='src/images/rings/rings4.jpg')
+                    img(src='src/images/rings/rings5.jpg')
+                    img(src='src/images/rings/rings7.jpg')
+                div.rings__buttons.buttons
+                    a(href='https://t.me/Kanalizaciavdom' class='button' target="_blank").buttons__telegram.button Спросить в Telegram
+                    a(href='tel:+375293439439' class='button').buttons__phone.button +375 29 343 94 39
+            +questions(questions)
+            include ../../common/partners/partners.pug
+        include ../../common/footer/footer.pug
+    script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+    script(src="src/js/comments.js")
+    script(src="src/js/burger.js")

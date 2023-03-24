@@ -1,0 +1,17 @@
+mixin question(name, text)
+    div.questions__question.question
+        div.question__content
+            div.question__name=name
+            p.question__text=text
+
+mixin questions(questions)
+    section.questions-section
+        div.questions-section__container._container
+            h1.questions-section__title.title Часто задаваемые вопросы
+            div.questions-section__questions
+                div.questions__container
+                    for i in questions
+                        +question(i.name, i.text)
+                
+        
+

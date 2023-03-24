@@ -1,0 +1,15 @@
+.caissons-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caissons-photos {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
+}
+.caissons-photos > img {
+  width: 330px;
+}/*# sourceMappingURL=caissons.css.map */
